@@ -104,12 +104,31 @@ h1-2{
   font-family:'Roboto', sans-serif;
   white-space: nowrap; 
 }
+h1-3{
+  position:absolute;
+  width: 11px;
+  top:13vh;
+  left: 114vh;
+  font-size: 30px;
+  display: flex;
+  justify-content:start;
+  color: #fff;
+  font-family:'Roboto', sans-serif;
+  white-space: nowrap;
+}
 .user-cont{
   
   text-align:initial;
   position: absolute;
+  top: 30px;
+  width: 10%;
+  height: 10px;
+  color: #000;
   right: 21vh;
   top:10vh;
+  display: block; 
+  font-size: 20px;
+  white-space: nowrap;
 }
 .fa-solid{
   font-size:100px;
