@@ -21,10 +21,10 @@ body {
   color: #FFF;
 }
 /*fim dos slides*/
-.ladex h2{
+.ladex h2-2{
   position:relative;
   width: 100%;
-  top: -920px;
+  top: -100vh;
   right:-300px;
   font-size: 50px;
   display: flex;
@@ -36,10 +36,10 @@ body {
 .ladex span{
   position: relative;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 22px;
     width: 100%;
-    left:230px;
-    top:-920px;
+    left:30vh;
+    top:-950px;
     nav-down: 10px;
     color: #eadd93;
     font-family:'Roboto', sans-serif;
@@ -142,8 +142,8 @@ h1{
 }
 .label-float2{
   position:absolute;
-  left:100px;
-  top:615px;
+  left:10vh;
+  top:100vh;
   width: 360px;
 }
 
@@ -172,7 +172,6 @@ h1{
 .label-float2 label{
   color: #000000;
   left: 15px;
-  top:-120px;
   position:absolute;
   pointer-events: none;
   transform: translateY(-50%);
@@ -295,14 +294,30 @@ button:hover{
   position: absolute;
   /* overflow: hidden; */
   display: block;
-  top: 310px;
-  right:392px;
+  top: 74vh;
+  right:125vh;
 }
 h2{
   position: absolute;
-  top: 280px;
-  right: 210px;
+  top: 70vh;
+  right: 105.5vh;
   color: #000000;
+}
+label h2{
+  position: absolute;
+  top: 28vh;
+  left: 94vh;
+  white-space:nowrap;
+}
+label h2-1{
+  position: absolute;
+  top: 43vh;
+  left: 94vh;
+  color: #000;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 2.5vh;
+  white-space:nowrap;
 }
 /* Oculte o botão de upload padrão */
 .upload input[type="file"] {
@@ -319,7 +334,6 @@ h2{
   background-color:#39371F;
   color: white;
   cursor: pointer;
-  top: 10px;
   right: 0px;
   border-radius:13px;
   border:1px solid #000000;
@@ -346,16 +360,21 @@ h2{
   cursor: pointer;
   font-size: 20px;
   position: relative;
-  top: -255px;
+  top: 7.8vh;
+  left: -100vh;
   color: red;
 }
 
 .testezex {
-  position: relative;
+  position: absolute;
+  top: 100vh;
+  right: 110vh;
 }
 
 .tooltip-container {
+  position: relative;
   display: block;
+  right: 4vh;
 }
 
 .content-tooltips {
@@ -364,7 +383,7 @@ h2{
   cursor: pointer;
   padding: 20px;
   margin-top: -14vh;
-  left: 90%;
+  left: 80vh;
   /* transform: translateY(-50%); */
   background-color: #000;
   color: #fff;
@@ -396,30 +415,21 @@ h2{
   color: #000000;
   font-weight: bold;
   font-size: 100%;
-  top: -240px;
-  left: 570px;
+  top: 9vh;
+  left: -22vh;
   position: relative;
 }
 
 #labeldesc{
   position: absolute;
-  top:40px;
-}
-#labelacomo{
-  position: absolute;
-  top:192px;
+  top:4vh;
 }
 #labelpoliti{
   position: absolute;
-  top:350px;
+  top:21vh;
   text-align: left;
   pointer-events: none; /* Garante que o label não interfira nos eventos do mouse */
   white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
-}
-#labelcomodi{
-  position: absolute;
-  top:510px;
-  white-space: nowrap;
 }
 
 @media screen and (max-width:768px) {
@@ -430,14 +440,17 @@ h2{
 }
 .mult-select-tag {
   display: flex;
-  width: 100%;
+  width: 40%;
   flex-direction: column;
   align-items: center;
   position: relative;
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-color: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  --border-color: rgb(218, 221, 224);
+  --border-color:#000;
   font-family: Verdana, sans-serif;
+  top:-30vh;
+  left: 61.7vh;
+  margin-bottom: 10vh;
 }
 
 .mult-select-tag .wrapper {
@@ -446,8 +459,9 @@ h2{
 
 .mult-select-tag .body {
   display: flex;
-  border: 1px solid var(--border-color);
-  background: #fff;
+  border: 2px solid var(--border-color);
+  background: #eadd93;
+  border-color: #000;
   min-height: 2.15rem;
   width: 100%;
   min-width: 14rem;
@@ -474,14 +488,15 @@ h2{
   margin: 10px;
   color: #2d3748;
   outline: 0;
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--border-color);
 }
 
 .mult-select-tag .btn-container {
   color: #e2ebf0;
+  border-color: #000;
   padding: .5rem;
   display: flex;
-  border-left: 1px solid var(--border-color);
+  border-left: 2px solid var(--border-color);
 }
 
 .mult-select-tag button {
@@ -506,13 +521,13 @@ h2{
 
 .mult-select-tag .drawer {
   position: absolute;
-  background: #fff;
+  background: transparent;
   max-height: 15rem;
   z-index: 40;
   top: 98%;
   width: 100%;
   overflow-y: scroll;
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--border-color);
   border-radius: .25rem;
 }
 
@@ -520,16 +535,22 @@ h2{
   list-style-type: none;
   padding: .5rem;
   margin: 0;
+  
+  margin-top:-10px;
 }
 
 .mult-select-tag ul li {
   padding: .5rem;
   border-radius: .25rem;
   cursor: pointer;
+  color: #000;
+  border: 2px solid #000;
+  margin: 4px;
 }
 
 .mult-select-tag ul li:hover {
-  background: rgb(243 244 246);
+  background:#000;
+  color: #eadd93;
 }
 
 .mult-select-tag .item-container {

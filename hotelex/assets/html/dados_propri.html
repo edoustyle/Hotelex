@@ -18,7 +18,7 @@
 <body>
   <div class="produto-container">
     <div class="ladex">
-      <h2> Hotelex</h2> <br>
+      <h2-2> Hotelex</h2-2> <br>
       <span>RESERVE SEU REFÚGIO PERFEITO, ONDE CADA ESTADIA SE TORNA UMA EXPERIÊNCIA INESQUECÍVEL!</span>
     </div>
     <div class='container'>
@@ -45,12 +45,8 @@
         <div class='label-float2'>
           <textarea type="text" id="desc" rows="5" cols="30"></textarea>
           <label id='labeldesc' for="desc">DESCRIÇÃO DO HOTEL</label>
-          <textarea id="acomodacoes" rows="5" cols="30"></textarea>
-          <label id='labelacomo' for='acomodacoes'>TIPOS DE ACOMODAÇÕES</label>
           <textarea id="politicas" rows="5" cols="30"></textarea>
           <label id='labelpoliti' for='politicas'>POLITICAS DE RESERVA E CANCELAMENTO</label>
-          <textarea id="comodidades" rows="5" cols="30"></textarea>
-          <label id='labelcomodi' for='comodidades'>COMODIDADES OFERECIDAS (EX. PISCINAS, WIFI)</label>
           
         </div>
         <div class="testezex">
@@ -68,25 +64,7 @@
                   <i class="fa fa-solid fa-circle-info"></i>
               </div>
               <div class="content-tooltips">
-                  <span class="tooltip-text">Descreve como são os quartos.</span>
-              </div>
-          </div>
-  
-          <div class="tooltip-container">
-              <div class="info">
-                  <i class="fa fa-solid fa-circle-info"></i>
-              </div>
-              <div class="content-tooltips">
                   <span class="tooltip-text">Detalhes sobre o procedimento de reserva e cancelamento.</span>
-              </div>
-          </div>
-  
-          <div class="tooltip-container">
-              <div class="info">
-                  <i class="fa fa-solid fa-circle-info"></i>
-              </div>
-              <div class="content-tooltips">
-                  <span class="tooltip-text">Informações adicionais sobre os tipos de acomodações.</span>
               </div>
           </div>
       </div>
@@ -122,19 +100,37 @@
 
         <form action="" method="get">
           <div>
-            <label for="frutas">Escolha suas frutas favoritas:</label>
+            <label for="frutas"><h2>COMODIDADES DO <br>HOTEL OFERECIDAS</h2></label>
             <select id="frutas" name="frutas" multiple>
-                <option value="maca">Maçã</option>
-                <option value="banana">Banana</option>
-                <option value="laranja">Laranja</option>
-                <option value="uva">Uva</option>
+                <option value="Wi-Fi Gratuito">Wi-Fi Gratuito</option>
+                <option value="Estacionamento Privado">Estacionamento Privado</option>
+                <option value="Piscina">Piscina</option>
+                <option value="Aceita Pets">Aceita Pets</option>
+                <option value="Café da manhã">Café da manhã</option>
+                <option value="Almoço">Almoço</option>
+                <option value="Janta">Janta</option>
+                <option value="Academia">Academia</option>
             </select>
           </div>
         </form>
-        <!-- <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.1/dist/js/multi-select-tag.js"></script> -->
-        <!-- <script>
+        <form action="" method="get">
+          <div>
+            <label for="frutas2"><h2-1>COMODIDADES DE <br>QUARTO OFERECIDAS</h2-1></label>
+            <select id="frutas2" name="frutas2" multiple>
+                <option value="Ar-Condicionado">Ar-Condicionado</option>
+                <option value="Banheiro privativo">Banheiro privativo</option>
+                <option value="Serviço de quarto">Serviço de quarto</option>
+                <option value="Frigobar">Frigobar</option>
+                <option value="Hidromassagem">Hidromassagem</option>
+                <option value="Banheira">Banheira</option>
+            </select>
+          </div>
+        </form>
+        <script src="../js/multipla_escolha.js"></script>
+        <script>
+          new MultiSelectTag('frutas2')
           new MultiSelectTag('frutas')  // id
-      </script> -->
+      </script>
         <div class="file-list" id="fileList"></div>
         <div class='justify-center'>
           <button onclick='entrar()'>CADASTRAR</button>
