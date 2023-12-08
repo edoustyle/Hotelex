@@ -518,3 +518,12 @@ select{
   top:-6.5vh;
   left: 5vh;
 }
+.social_media{
+  position: relative;
+  top:-150vh;
+  left: 170vh;
+  font-size: 4vh;
+}
+i{
+  margin-left: 1vh;
+}
