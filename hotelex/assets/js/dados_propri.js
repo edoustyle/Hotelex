@@ -208,12 +208,3 @@ menuButton.addEventListener("click", (e) => {
     tootltip.classList.toggle("active");
     alternarMenuButtonIcon();
 });
-
-
-const alternarMenuButtonIcon = () => {
-
-    const mnuButtonIcon = document.querySelector('.menu-button ion-icon');
-    const isOpen = mnuButtonIcon.getAttribute('name') === 'bulb';
-    mnuButtonIcon.setAttribute('name', (isOpen ? 'bulb-outline' : 'bulb'));
-
-}

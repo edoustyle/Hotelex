@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.1/dist/css/multi-select-tag.css"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/dados_propri.css">
@@ -17,7 +18,7 @@
 <body>
   <div class="produto-container">
     <div class="ladex">
-      <h2> Hotelex</h2> <br>
+      <h2-2> Hotelex</h2-2> <br>
       <span>RESERVE SEU REFÚGIO PERFEITO, ONDE CADA ESTADIA SE TORNA UMA EXPERIÊNCIA INESQUECÍVEL!</span>
     </div>
     <div class='container'>
@@ -44,69 +45,92 @@
         <div class='label-float2'>
           <textarea type="text" id="desc" rows="5" cols="30"></textarea>
           <label id='labeldesc' for="desc">DESCRIÇÃO DO HOTEL</label>
-          <textarea id="acomodacoes" rows="5" cols="30"></textarea>
-          <label id='labelacomo' for='acomodacoes'>TIPOS DE ACOMODAÇÕES</label>
           <textarea id="politicas" rows="5" cols="30"></textarea>
           <label id='labelpoliti' for='politicas'>POLITICAS DE RESERVA E CANCELAMENTO</label>
-          <textarea id="comodidades" rows="5" cols="30"></textarea>
-          <label id='labelcomodi' for='comodidades'>COMODIDADES OFERECIDAS (EX. PISCINAS, WIFI)</label>
           
         </div>
         <div class="testezex">
-          <div class="content-tooltips">
-            <a href="#">
-              <i class="fa-solid fa-circle-info" style="color: #000000;font-size: 40px;position:absolute; right: 110px;top: 586px;"></i>
-            </a>
-            <span class="tooltip-text">Descreve seu hotel mencionando a localidade.</span>
+          <div class="tooltip-container">
+              <div class="info">
+                  <i class="fa fa-solid fa-circle-info"></i>
+              </div>
+              <div class="content-tooltips">
+                  <span class="tooltip-text">Descreve seu hotel mencionando a localidade.</span>
+              </div>
           </div>
-          <div class="content-tooltips2">
-            <a href="#">
-              <i class="fa-solid fa-circle-info" style="color: #000000;font-size: 40px;position:absolute; right: 110px;top: 717px;"></i>
-            </a>
-            <span class="tooltip-text2">Descreve como sao os quartos.</span>
+  
+          <div class="tooltip-container">
+              <div class="info">
+                  <i class="fa fa-solid fa-circle-info"></i>
+              </div>
+              <div class="content-tooltips">
+                  <span class="tooltip-text">Detalhes sobre o procedimento de reserva e cancelamento.</span>
+              </div>
           </div>
-          <div class="content-tooltips3">
-            <a href="#">
-              <i class="fa-solid fa-circle-info" style="color: #000000;font-size: 40px;position:absolute; right: 110px;top: 846px;"></i>
-            </a>
-            <span class="tooltip-text3">Detalhes sobre o procedimento de reserva e cancelamento.</span>
-          </div>
-          <div class="content-tooltips4">
-            <a href="#">
-              <i class="fa-solid fa-circle-info" style="color: #000000;font-size: 40px;position:absolute; right: 110px;top: 976px;"></i>
-            </a>
-            <span class="tooltip-text4">Informações adicionais sobre os tipos de acomodações.</span>
-          </div>
+      </div>
+      <div class='label-float3'>
+        <input type='text' id='email2' paceholder='' required>
+        <label id='labelConfirmSenha' for='email2'>EMAIL</label>
+        <input type='password' id='senha' paceholder='' required>
+        <label id='labelSenha' for='senha'>SENHA</label>
+        <i class="fa fa-eye" aria-hidden="true"></i>
+      </div>
+        <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+        <div class="selecta">
+          <label for="qtdquarto"><strong>NUMERO MÁXIMO DE CAMAS<br> DISPONIVEIS POR QUARTO</strong></label>
+          <select id="qtdquarto" required>
+            <option selected disabled value="">Selecione</option>
+            <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+          </select>
         </div>
-        <div class='label-float3'>
-          <input type='text' id='email2' paceholder='' required>
-          <label id='labelConfirmSenha' for='email2'>EMAIL</label>
-          <input type='password' id='senha' paceholder='' required>
-          <label id='labelSenha' for='senha'>SENHA</label>
-          <i class="fa fa-eye" aria-hidden="true"></i>
+        <h2>FOTOS PARA A DIVULGAÇÃO</h2>
+        <div class="upload">
+          <!-- Elemento de botão personalizado -->
+          <div class="custom_upload" onclick="document.getElementById('imagex').click()">
+              <strong>FAZER UPLOAD</strong>
+          </div>
+          <!-- Input de arquivo oculto -->
+          <input type="file" id="imagex" name="fimg" accept="image/*" multiple onchange="updateFileList(this)">
+          <!-- <i class="fa-solid fa-circle-xmark fa-2xs" style="color: #ff0000;"></i> -->
         </div>
-         <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
-          <div class="selecta">
-            <label for="qtdquarto"><strong>NUMERO MÁXIMO DE CAMAS<br> DISPONIVEIS POR QUARTO</strong></label>
-            <select id="qtdquarto" required>
-              <option selected disabled value="">Selecione</option>
-              <option>5</option>
-              <option>4</option>
-              <option>3</option>
-              <option>2</option>
-              <option>1</option>
+
+        <form action="" method="get">
+          <div>
+            <label for="frutas"><h2>COMODIDADES DO <br>HOTEL OFERECIDAS</h2></label>
+            <select id="frutas" name="frutas" multiple>
+                <option value="Wi-Fi Gratuito">Wi-Fi Gratuito</option>
+                <option value="Estacionamento Privado">Estacionamento Privado</option>
+                <option value="Piscina">Piscina</option>
+                <option value="Aceita Pets">Aceita Pets</option>
+                <option value="Café da manhã">Café da manhã</option>
+                <option value="Almoço">Almoço</option>
+                <option value="Janta">Janta</option>
+                <option value="Academia">Academia</option>
             </select>
           </div>
-          <h2>FOTOS PARA A DIVULGAÇÃO</h2>
-          <div class="upload">
-            <!-- Elemento de botão personalizado -->
-            <div class="custom_upload" onclick="document.getElementById('imagex').click()">
-                <strong>FAZER UPLOAD</strong>
-            </div>
-            <!-- Input de arquivo oculto -->
-            <input type="file" id="imagex" name="fimg" accept="image/*" multiple onchange="updateFileList(this)">
-            <!-- <i class="fa-solid fa-circle-xmark fa-2xs" style="color: #ff0000;"></i> -->
-        </div>
+        </form>
+        <form action="" method="get">
+          <div>
+            <label for="frutas2"><h2-1>COMODIDADES DE <br>QUARTO OFERECIDAS</h2-1></label>
+            <select id="frutas2" name="frutas2" multiple>
+                <option value="Ar-Condicionado">Ar-Condicionado</option>
+                <option value="Banheiro privativo">Banheiro privativo</option>
+                <option value="Serviço de quarto">Serviço de quarto</option>
+                <option value="Frigobar">Frigobar</option>
+                <option value="Hidromassagem">Hidromassagem</option>
+                <option value="Banheira">Banheira</option>
+            </select>
+          </div>
+        </form>
+        <script src="../js/multipla_escolha.js"></script>
+        <script>
+          new MultiSelectTag('frutas2')
+          new MultiSelectTag('frutas')  // id
+      </script>
         <div class="file-list" id="fileList"></div>
         <div class='justify-center'>
           <button onclick='entrar()'>CADASTRAR</button>
@@ -114,6 +138,7 @@
       </div>
     </div>
     <script src="../js/dados_propri.js"></script>
+    
   </div>
 </body>
 </html>
