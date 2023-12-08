@@ -19,7 +19,7 @@ body {
 
 .circle {
   position: relative;
-  top: 130px;
+  top: 13vh;
   margin-left: 1100px;
   flex-grow: 1;
   width: 35%;
