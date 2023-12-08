@@ -454,6 +454,10 @@ h6{
   height: auto;
   display: block;
 }
+a{
+  color: #000;
+  text-decoration: none;
+}
 .custom-size{
   width: 70vh; 
   height: 34vh; 
