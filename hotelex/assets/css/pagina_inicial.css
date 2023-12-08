@@ -8,7 +8,8 @@
   font-family: 'Roboto', sans-serif;
 }
 .container{
-  position: a;
+  position: relative;
+  height: 0vh;
 }
 .card{
   top:0px;
@@ -26,18 +27,17 @@
   background-color:#eadd93;
   padding: 300px;
   width: 469%;
-  height: 1400px;
+  height: 2000px;
   right: 400%;
   display: block;
 }
 .card3{
     position: relative;
     display: block;
-    top: 30px;
     padding: 100px;
-    width: 10%;
-    height: 10px;
+    height: 70vh;
     color: #000;
+    background-color: #886c6c;
 }
 .justify-center{
     position: absolute;
@@ -67,8 +67,8 @@ button{
 }
 /*fundo do botex*/
 button:hover{
-  background-color: #000000;
-  color: #fff;
+  background-color: #B1A69B;
+  color: #000;
 }
 h1{
   position:absolute;
@@ -79,6 +79,7 @@ h1{
   display: flex;
   justify-content:start;
   color: #fff;
+  font-weight: 1;
   font-family:'Adumu', sans-serif;
 }
 h1-1{
@@ -149,6 +150,30 @@ h2-1{
   left: 10vh;
   font-size:4vh;
 }
+h4{
+  position: absolute;
+  top:60vh;
+  left: 0vh;
+  font-size: 8vh;
+}
+h4-1{
+  position: absolute;
+  top:70vh;
+  left: 0vh;
+  font-size:4vh;
+}
+h5{
+  position: absolute;
+  top:140vh;
+  left: 0vh;
+  font-size: 8vh;
+}
+h5-1{
+  position: absolute;
+  top:150vh;
+  left: 0vh;
+  font-size:4vh;
+}
 .user-cont{
   text-align:initial;
   position: absolute;
@@ -188,6 +213,26 @@ h2-1{
   overflow: hidden;
   position: relative;
 }
+.box2 {
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  top:80vh;
+  right: 180vh;
+}
+.box3 {
+  width: 400px;
+  height: 500px;
+  margin-right: 20px;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  top:160vh;
+  right: 360vh;
+}
 .ofertex{
   background-color: #0A7642;
   height: 4vh;
@@ -197,8 +242,8 @@ h2-1{
   border-radius: 20px;
   color: #fff;
   position: absolute;
-  top: 36vh;
-  left: 2vh;
+  top: 34vh;
+  left: 3vh;
   display: block;
 }
 .ofertex2{
@@ -214,6 +259,45 @@ h2-1{
   left: 90vh;
   display: block;
 }
+.ofertex3{
+  background-color: #062F66;
+  height: 4vh;
+  width: 20vh;
+  text-align:center;
+  white-space: nowrap;
+  border-radius: 20px;
+  color: #fff;
+  position: absolute;
+  top: 270vh;
+  left: 90vh;
+  display: block;
+}
+.ofertex4{
+  background-color: #062F66;
+  height: 4vh;
+  width: 20vh;
+  text-align:center;
+  white-space: nowrap;
+  border-radius: 20px;
+  color: #fff;
+  position: absolute;
+  top: 360vh;
+  left: 90vh;
+  display: block;
+}
+.ofertex5{
+  background-color: #062F66;
+  height: 4vh;
+  width: 14vh;
+  text-align:center;
+  white-space: nowrap;
+  border-radius: 20px;
+  color: #fff;
+  position: absolute;
+  top: 46vh;
+  left: 25vh;
+  display: block;
+}
 h3{
   position: relative;
   top:0.6vh;
@@ -223,7 +307,7 @@ h3{
 }
 h3-1{
   position: relative;
-  top:-7vh;
+  top:-8vh;
   font-size:2.5vh;
   font-weight:0;
   left: 27vh;
@@ -232,9 +316,132 @@ h3-1{
 h3-2{
   font-family: 'Lato';
 }
+h3-3-1{
+  font-family: 'Lato';
+  position: relative;
+  top:-2vh;
+  font-size: 3vh;
+  font-weight: bold;
+  left: 14.5vh;
+}
+h3-3-2{
+  font-family: 'Lato';
+  position: relative;
+  top:-2vh;
+  font-size: 3vh;
+  font-weight: bold;
+  left: 17vh;
+}
+h3-3-3{
+  font-family: 'Lato';
+  position: relative;
+  top:-2vh;
+  font-size: 3vh;
+  font-weight: bold;
+  left: 16vh;
+}
+h3-3-4{
+  font-family: 'Lato';
+  position: relative;
+  top:-2vh;
+  font-size: 3vh;
+  font-weight: bold;
+  left: 11.5vh;
+}
+h5-2-1{
+  font-family: 'Lato';
+  position: relative;
+  top:-15vh;
+  font-size: 2vh;
+  font-weight: bold;
+}
+h5-2-2{
+  font-family: 'Lato';
+  position: relative;
+  top:-15vh;
+  font-size: 2vh;
+  left: 15.5vh;
+}
+h5-2-3{
+  font-family: 'Lato';
+  position: relative;
+  top:-9vh;
+  font-size: 3vh;
+  left: 1vh;
+  font-weight: bold;
+}
+h5-2-4{
+  font-family: 'Lato';
+  position: relative;
+  top:-4.5vh;
+  font-size: 2.5vh;
+  left: 1vh;
+  font-weight: bold;
+  color: #062F66;
+}
+h5-2-5{
+  font-family: 'Lato';
+  position: relative;
+  top:0.5vh;
+  left: 1vh;
+  white-space: pre-line;
+  /* padding-left: 10.5vh; */
+}
+.ofertex:hover{
+  background-color: rgb(0, 0, 0);
+}
+.ofertex2:hover{
+  background-color: rgb(0, 0, 0);
+}
+.ofertex3:hover{
+  background-color: rgb(0, 0, 0);
+}
+.ofertex4:hover{
+  background-color: rgb(0, 0, 0);
+}
+.ofertex5:hover{
+  background-color: rgb(0, 0, 0);
+}
+h6{
+  font-size: 10vh;
+  font-family: 'Adumu';
+  font-size: 6vh;
+  top:-80vh;
+  left: 18vh;
+  font-weight: 1;
+  position: relative;
+}
+.contatos{
+  position: relative;
+  top:-80vh;
+  left: 6vh;
+}
+.contatos li {
+  margin-bottom: 10px; /* Ajuste a margem conforme necessário */
+  list-style-type: none; /* Remove os marcadores de lista */
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.contatos li:hover{
+  color: #eadd93;
+}
+.contatos2{
+  position: relative;
+  top:-95.3vh;
+  left: 40vh;
+}
+.contatos2 li {
+  margin-bottom: 10px; /* Ajuste a margem conforme necessário */
+  list-style-type: none; /* Remove os marcadores de lista */
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.contatos2 li:hover{
+  color: #eadd93;
+}
 .preço{
   position: absolute;
-  top:35.5vh;
+  top:35vh;
   font-size: 40px;
   left: 27vh;
   margin-top: 0vh;
@@ -243,15 +450,71 @@ h3-2{
 .box img {
   width:100%;
   /* height: 100%; */
-  max-height: 300px;
+  max-height: 260px;
   height: auto;
   display: block;
 }
-
+.custom-size{
+  width: 70vh; 
+  height: 34vh; 
+  margin-left: -10vh;
+}
+.custom-size2{
+  width: 44vh; 
+  height: 34vh; 
+  margin-left: -1vh;
+}
+.custom-size3{
+  width: 44vh; 
+  height: 34vh; 
+  margin-left: -1vh;
+}
+.custom-size4{
+  width: 44vh; 
+  height: 34vh; 
+  margin-left: -1vh;
+}
 .text {
   position: absolute;
   bottom: 10px;
   left: 10px;
   color: black;
   font-size: 16px;
+}
+select{
+  color: #000;
+  padding: 0.2em;
+  border: 1px solid #000000;
+  /* box-shadow: 2px 2px 2px rgba(0,0,0,0.2); */
+  display: block;
+  font-size: 4vh;
+  height: 8vh;
+  width: 50vh;
+  border-radius: 10px;
+  background-color: none;
+  text-align: center;
+}
+.selecta select:focus{
+  /* color: #eadd93; */
+  color: #000;
+  background: #fff;
+}
+.selecta{
+  color: #000000;
+  position: relative;
+  top: -85vh;
+  left: 5vh;
+  font-size: 200%;
+}
+.logo2 img {
+  width: 20vh; /* Defina o tamanho desejado para a largura */
+  height: auto; /* Mantenha a proporção original para a altura */
+  top:-93vh;
+  left: 1vh;
+  position: relative;
+}
+.bandeirabr{
+  position: relative;
+  top:-6.5vh;
+  left: 5vh;
 }
