@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.1/dist/css/multi-select-tag.css"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/dados_propri.css">
@@ -52,26 +53,6 @@
           <label id='labelcomodi' for='comodidades'>COMODIDADES OFERECIDAS (EX. PISCINAS, WIFI)</label>
           
         </div>
-        <!-- <div class="testezex">
-          <div class="info">
-            <i class="fa-solid fa-circle-info"></i>
-            <i class="fa-solid fa-circle-info"></i>
-            <i class="fa-solid fa-circle-info"></i>
-            <i class="fa-solid fa-circle-info"></i>
-          </div>
-          <div class="content-tooltips">
-            <span class="tooltip-text">Descreve seu hotel mencionando a localidade.</span>
-          </div>
-          <div class="content-tooltips">
-            <span class="tooltip-text">Descreve como sao os quartos.</span>
-          </div>
-          <div class="content-tooltips">
-            <span class="tooltip-text">Detalhes sobre o procedimento de reserva e cancelamento.</span>
-          </div>
-          <div class="content-tooltips">
-            <span class="tooltip-text">Informações adicionais sobre os tipos de acomodações.</span>
-          </div>
-        </div> -->
         <div class="testezex">
           <div class="tooltip-container">
               <div class="info">
@@ -109,35 +90,51 @@
               </div>
           </div>
       </div>
-        <div class='label-float3'>
-          <input type='text' id='email2' paceholder='' required>
-          <label id='labelConfirmSenha' for='email2'>EMAIL</label>
-          <input type='password' id='senha' paceholder='' required>
-          <label id='labelSenha' for='senha'>SENHA</label>
-          <i class="fa fa-eye" aria-hidden="true"></i>
+      <div class='label-float3'>
+        <input type='text' id='email2' paceholder='' required>
+        <label id='labelConfirmSenha' for='email2'>EMAIL</label>
+        <input type='password' id='senha' paceholder='' required>
+        <label id='labelSenha' for='senha'>SENHA</label>
+        <i class="fa fa-eye" aria-hidden="true"></i>
+      </div>
+        <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+        <div class="selecta">
+          <label for="qtdquarto"><strong>NUMERO MÁXIMO DE CAMAS<br> DISPONIVEIS POR QUARTO</strong></label>
+          <select id="qtdquarto" required>
+            <option selected disabled value="">Selecione</option>
+            <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+          </select>
         </div>
-         <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
-          <div class="selecta">
-            <label for="qtdquarto"><strong>NUMERO MÁXIMO DE CAMAS<br> DISPONIVEIS POR QUARTO</strong></label>
-            <select id="qtdquarto" required>
-              <option selected disabled value="">Selecione</option>
-              <option>5</option>
-              <option>4</option>
-              <option>3</option>
-              <option>2</option>
-              <option>1</option>
+        <h2>FOTOS PARA A DIVULGAÇÃO</h2>
+        <div class="upload">
+          <!-- Elemento de botão personalizado -->
+          <div class="custom_upload" onclick="document.getElementById('imagex').click()">
+              <strong>FAZER UPLOAD</strong>
+          </div>
+          <!-- Input de arquivo oculto -->
+          <input type="file" id="imagex" name="fimg" accept="image/*" multiple onchange="updateFileList(this)">
+          <!-- <i class="fa-solid fa-circle-xmark fa-2xs" style="color: #ff0000;"></i> -->
+        </div>
+
+        <form action="" method="get">
+          <div>
+            <label for="frutas">Escolha suas frutas favoritas:</label>
+            <select id="frutas" name="frutas" multiple>
+                <option value="maca">Maçã</option>
+                <option value="banana">Banana</option>
+                <option value="laranja">Laranja</option>
+                <option value="uva">Uva</option>
             </select>
           </div>
-          <h2>FOTOS PARA A DIVULGAÇÃO</h2>
-          <div class="upload">
-            <!-- Elemento de botão personalizado -->
-            <div class="custom_upload" onclick="document.getElementById('imagex').click()">
-                <strong>FAZER UPLOAD</strong>
-            </div>
-            <!-- Input de arquivo oculto -->
-            <input type="file" id="imagex" name="fimg" accept="image/*" multiple onchange="updateFileList(this)">
-            <!-- <i class="fa-solid fa-circle-xmark fa-2xs" style="color: #ff0000;"></i> -->
-        </div>
+        </form>
+        <!-- <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.1/dist/js/multi-select-tag.js"></script> -->
+        <!-- <script>
+          new MultiSelectTag('frutas')  // id
+      </script> -->
         <div class="file-list" id="fileList"></div>
         <div class='justify-center'>
           <button onclick='entrar()'>CADASTRAR</button>
@@ -145,6 +142,7 @@
       </div>
     </div>
     <script src="../js/dados_propri.js"></script>
+    
   </div>
 </body>
 </html>
