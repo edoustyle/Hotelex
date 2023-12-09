@@ -1,36 +1,33 @@
-/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 @import url('https://fonts.cdnfonts.com/css/adumu-inline');
-
 * {
   margin: 0;
-  padding: 0;
+  padding:0;
   font-family: 'Roboto', sans-serif;
 }
-
+/*fundex*/
 body {
   background-image: url(../images/Design_sem_nome_2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden;
+  background-attachment: fixed
+  
 }
-
-.circle {
-  position: relative;
-  top: 13vh;
-  margin-left: 1100px;
-  flex-grow: 1;
-  width: 35%;
-  height: 35%;
+.circle{
+  position: absolute;
+  top: 25vh;
+  left: 126vh;
+  right: 0px;
+  width: 30vw;
+  height: 30vw;
   background: #eb29391e;
   clip-path: circle();
   padding: 0px;
+  display: flex;
 }
-
-.sliders {
-  margin: auto;
+.sliders{
+  margin:0 auto;
   width: 800px;
   height: 800px;
   overflow: hidden;
@@ -49,28 +46,31 @@ body {
   position: relative;
   transition-timing-function: ease;
   transition-duration: 2s;
-
 }
 .slide img{
-  width: 900px;
-  margin-top: 120px;
+  width: 100vh;
+  margin-top: 0px;
   margin-left: 0px;
+  display:flex;
+  min-width: 100vh; /* Tamanho mínimo */
+  max-width: 100vh; /* Tamanho máximo */
 }
-.manual-navegacao {
-  position: relative;
-  width: 675px;
-  top: 28vh;
+/*manual*/
+.manual-navigacao{
+  position:absolute;
+  width: 800px;
+  margin-top: 12vh;
+  left: -11vh;
   display: flex;
   justify-content: center;
 }
-
 .manual-btn{
   border: 2px solid #FFF;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
+  transition: 3.5s;
 }
-
 .manual-btn:not(:last-child){
   margin-right: 30px;
 }
@@ -89,7 +89,7 @@ body {
 #radio4:checked ~ .first{
   margin-left: -75%;
 }
-
+/*automatico*/
 .navigacao-auto div{
   border: 2px solid #20a6ff;
   padding: 5px;
@@ -97,241 +97,245 @@ body {
   cursor: pointer;
   transition: 1s;
 }
-
-.navegacao-auto {
+.navigacao-auto{
   position: absolute;
   width: 800px;
-  margin-bottom: 40px;
+  margin-top: 54.9vh;
+  left: -11vh;
+  display: flex;
   justify-content: center;
 }
-.navegacao-auto div:not(:last-child){
+.navigacao-auto div:not(:last-child){
   margin-right: 30px;
 }
-#radio1:checked~.navegacao-auto .auto-btn1{
+#radio1:checked~.navigacao-auto .auto-btn1{
   background-color: #FFF;
 }
-#radio2:checked~.navegacao-auto .auto-btn2{
+#radio2:checked~.navigacao-auto .auto-btn2{
   background-color: #FFF;
 }
-#radio3:checked~.navegacao-auto .auto-btn3{
+#radio3:checked~.navigacao-auto .auto-btn3{
   background-color: #FFF;
 }
-#radio4:checked~.navegacao-auto .auto-btn4{
+#radio4:checked~.navigacao-auto .auto-btn4{
   background-color: #FFF;
 }
-
-/* Hotelex */
-.ladex h2 {
-  position: relative;
-  bottom: 80vh; 
+/*fim dos slides*/
+.ladex h2{
+  position:absolute;
   width: 100%;
-  left: 140vh; 
-  font-size: 5vh; 
-  flex-grow: 1;
-  align-items: center;
+  top:60px;
+  right: 335px;
+  font-size: 50px;
+  display: flex;
+  align-items:center;
+  justify-content:end;
   color: #eadd93;
-  font-family: 'Adumu', sans-serif;
+  font-family:'Adumu', sans-serif;
+  
 }
-
-/*RESERVE SEU REFÚGIO*/
-.ladex span {
-  position: relative;  
-  bottom: 80vh;
-  flex-grow: 1;
-  left: 130vh;
-  width: 100%;
-  font-size: 2vh;
-  font-weight: 100;
-  text-align:left;
-  color: #eadd93;
-  font-family: 'Roboto', sans-serif;
-}
-/*Condições de uso*/
-.ladex k2 {
+.ladex span{
   position: absolute;
-  font-size: 1.5vh;
-  left: 175vh;
-  bottom: 2vh;
-  text-align: center;
-  color: #eadd93;
-  font-family: 'Lato', 'Sans-serif';
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 19px;
+    max-width: 450px;
+    align-items:center;
+    width: 100%;
+    right: 200px;
+    nav-down: 10px;
+    top: 120px;
+    text-align: center;
+    justify-content:end;
+    color: #eadd93;
+    font-family:'Roboto', sans-serif;
 }
-
+.ladex k2{
+  position: absolute;
+    text-decoration: none;
+    font-size: 19px;
+    max-width: 450px;
+    align-items:center;
+    width: 40%;
+    right: 200px;
+    nav-down: 10px;
+    bottom: 20px;
+    text-align: center;
+    justify-content:end;
+    color: #eadd93;
+    font-family:'', sans-serif;
+}
+/*posicao do quadrado*/
 .container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width:40%;
   margin-top: 10px;
   bottom: 1000px;
 }
-
-/* Forma do login (card) */
+/*forma do login quadadex*/
 .card {
-  position: relative;
-  flex-grow: 1;
-  bottom: 95vh;
+  position: absolute;
   background-color: #eadd93;
-  padding: 20vh;
-  border-radius: 15%;
-  width: 40vh;
-  height: 50vh;
-  margin-left: 10vh;
+  border-radius: 20%;
+  height: 100vh;
+  width: 80vh;
+  margin-left: 40vh;
+  /*sombrex*/
   box-shadow: 3px 3px 1px 0px #00000060;
   text-align: center;
+  display: flex;
 }
-
-.card2 {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  flex-grow: 1;
-  min-width: 400px;
+.card2{
+  position: absolute;
   background-color: #39371F;
-  padding: 15vh;
-  height: 25vh;
+  width:70vh;
+  height: 55vh;
   border-radius: 5%;
+  left:5vh;
+  top: 32vh;
+  display: flex;
 }
-
-.card3 {
-  position: relative;
+.card3{
+  position: absolute;
   background-color: #eadd93;
-  height: 3.5vh;
-  width: 25vh;
-  padding: auto;
-  left: 8vh;
+  height: 3vh;
+  width: 20vh;
   border-radius: 5%;
   font-size: 10px;
-  bottom: 120px;
-  flex-grow: 1;
+  left: 24vh;
+  top: 6vh;
+  display: flex;
 }
-
-.texto_right {
-  text-align: initial;
-  position: relative;
-  right: 120px;
-  top: 12px;
-  margin-right: -120%;
+.texto_right{
+    text-align:initial;
+    position: relative;
+    right: 120px;
+    top:12px;
+    margin-right: -120%;
 }
-
-.titulex {
+.titulex{
   margin-top: -130px;
 }
-
-h1 {
-  font-size: 60px;
+/*mexe um pouco com o titulo*/
+h1{
+  font-size: 62px;
   text-align: center;
-  position: relative;
+  position: absolute;
+  top: 3vh;
   color: #000000;
-  font-family: 'Adumu';
-  bottom: 40px;
+  font-family:'Adumu';
+  font-weight:30;
 }
-
-h1-1 {
-  position: relative;
+h1-1{ 
   font-size: 40px;
+  text-align:center;
   color: #000000;
-  font-family: 'Adumu';
-  bottom: 40px;
+  font-family:'Adumu';
+  font-weight:30;
+  position: absolute;
+  top: 24vh;
+  left: 20vh;
 }
-
-h1-2 {
-  font-size: 25px;
-  text-align: center;
+h1-2{ 
+    font-size:20px;
+    text-align:center;
+    color: #fff;
+    font-family:'Adumu';
+    font-weight:30;
+    top: 2vh;
+    left: 31vh;
+    position: absolute;
+}
+h1-3{ 
+    font-size:20px;
+    text-align:right;
+    color: #000000;
+    font-family:'Adumu';
+    top: 1vh;
+    left: 3px;
+    position: absolute;
+    font-size: 15px;
+}
+h1-2-1{ 
+    font-size:20px;
+    color: #fff;
+    font-family:'Adumu';
+    font-weight:30;
+    top: 10vh;
+    left: 15vh;
+    position: relative;
+    text-align: nowrap;
+}
+.texto_right2{
+  text-align:justify;
+  position: absolute;
+  right: 4vh;
+  top:16vh;
+  margin-left: 2vh;
+}
+h1-4{ 
+  font-size:12px;
   color: #fff;
-  font-family: 'Adumu';
-  font-weight: 30;
-  bottom: 130px;
-  position: relative;
-}
-
-h1-3 {
-  position: relative;
-  text-align: right;
-  color: #000000;
-  font-family: 'Adumu';
-  top: 10px;
-  font-size: 19px;
-}
-
-h1-2-1 {
-  font-size: 20px;
-  color: #fff;
-  font-family: 'Adumu';
-  font-weight: 30;
-  bottom: 115px;
-  position: relative;
-  text-align: right;
-}
-
-.texto_right2 {
-  text-align:left;
-  position: relative;
-  right: 127px;
-  margin-right: -65%;
-  bottom: 105px;
-}
-
-h1-4 {
-  font-size: 18px;
-  color: #fff;
-  font-family: 'Roboto';
-  font-weight: bold;
+  font-family:'Roboto';
+  font-weight:bold;
   top: 0px;
   position: relative;
   text-align: right;
 }
-
-/* H1-4-1 */
-h1-4-1 {
-  font-size: 18px;
+h1-4-1{ 
+  font-size:12px;
   color: #fff;
-  font-family: 'Roboto';
-  font-weight: 0;
+  font-family:'Roboto';
+  font-weight:0;
   top: 0px;
   position: relative;
-  text-align
-  : right;
+  text-align: right;
 }
-
-/* Botão de login */
-button {
+/*botao login*/
+button{
   background-color: #39371F;
   border-color: #000000;
   color: #FFFFFF;
-  font-weight: 400;
+  padding: 6px;
+  font-weight:400;
   font-size: 15pt;
-  top: 0px;
-  border-radius: 10px;
+  margin-top: 20px;
+  border-radius: 14px;
   cursor: pointer;
   outline: invert;
-  width: 100%;
+  transition: all .4s ease-out;
+  width:200%;
   max-width: 1800px;
+  margin: 20;
   height: 50px;
 }
-
-/* Fundo do botão no hover */
-button:hover {
+/*fundo do botex*/
+button:hover{
   background-color: #000000;
-  color: #ffffff;
+  color: #fff;
 }
 
-/* Lista do ladex */
-.ladex ul a {
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+.ladex ul a{
   color: #eadd93;
   font-weight: bold;
   text-decoration: none;
   transition: all .3s ease-out;
 }
-
-/* Hover na lista do ladex */
-.ladex ul a:hover {
+.ladex ul a:hover{
   color: #fffdfd;
 }
 
-/* Justify center */
-.justify-center {
+/**/
+.justify-center{
   display: flex;
   justify-content: center;
+  position: absolute;
+  top: 88vh;
+  left: 24vh;
 }
