@@ -268,7 +268,7 @@ h1-2-1{
     text-align: nowrap;
 }
 .texto_right2{
-  text-align:justify;
+  text-align:left;
   position: absolute;
   right: 4vh;
   top:16vh;
@@ -281,7 +281,6 @@ h1-4{
   font-weight:bold;
   top: 0px;
   position: relative;
-  text-align: right;
 }
 h1-4-1{ 
   font-size:12px;
@@ -290,7 +289,6 @@ h1-4-1{
   font-weight:0;
   top: 0px;
   position: relative;
-  text-align: right;
 }
 /*botao login*/
 button{

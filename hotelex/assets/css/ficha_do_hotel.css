@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.cdnfonts.com/css/adumu-inline');
+* {
+  margin: 0;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+}
+/*fundex*/
+body {
+  background-image: url(../images/Design_sem_nome_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed
+  
+}
+.produto-container{
+  /* display: flex; */
+  width: 100%;
+  justify-content: center;
+  color: #FFF;
+}
+/*fim dos slides*/
+.ladex h2{
+  position:absolute;
+  width: 100%;
+  top: 8vh;
+  left: 0vh;
+  font-size: 50px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  color: #eadd93;
+  font-family:'Adumu', sans-serif;
+}
+.ladex span{
+  position: absolute;
+  font-weight: 100px;
+  font-size: 20px;
+  width: 100%;
+  left:0vh;
+  top:18vh;
+  nav-down: 10px;
+  color: #eadd93;
+  font-family:'Roboto', sans-serif;
+  display: flex;
+  white-space: nowrap;
+  align-items:center;
+  justify-content:center;
+}
+section{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px 0 15px;
+}
+/*posicao do quadrado*/
+.container {
+    display: flex;
+    justify-content: center;
+    width:40%;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+/*forma do login quadadex*/
+.card {
+    background-color: #eadd93;
+    padding: 180px;
+    border-radius: 20%;
+    width: 100vh;
+    height: 500px;
+    margin-left: 190vh;
+    /*sombrex*/
+    box-shadow: 3px 3px 1px 0px #00000060;
+    text-align: center;
+    justify-content: center;
+    margin-top: 14vh;
+}
+.card2{
+    background-color: #39371F;
+    padding: 140px;
+    width:70%;
+    height: 100px;
+    border-radius: 5%;
+    margin-left: -20%;
+    margin-top:10px;
+    /*sombrex*/
+}
+.texto_right{
+    text-align:initial;
+    position: relative;
+    right: 120px;
+    top:12px;
+    margin-right: -120%;
+}
+.titulex{
+margin-top: -130px;
+}
+/*mexe um pouco com o titulo*/
+h1{
+font-size: 62px;
+text-align: center;
+position: relative;
+margin-bottom: 10px;
+color: #000000;
+font-family:'Adumu';
+font-weight:30;
+}
+h1-1{ 
+font-size: 40px;
+text-align:center;
+color: #000000;
+font-family:'Adumu';
+font-weight:30;
+
+}
+h1-2-1{ 
+    font-size:30px;
+    color: #fff;
+    font-family:'Adumu';
+    font-weight:30;
+    top: -120px;
+    right: -10px;
+    position: relative;
+    text-align: right;
+}
+h1-2-2{ 
+    font-size:11px;
+    color: #fff;
+    font-family:'Roboto';
+    top: -120px;
+    right: -10px;
+    position: relative;
+    text-align: right;
+}
+.texto_right2{
+    text-align:initial;
+    position: relative;
+    right: 111px;
+    top:-70px;
+}
+h3{
+    color: #fff;
+    top:0px;
+    position: relative;
+    right: -6px;
+    font-size: 20px;
+}
+.radiex label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+/* Estilo do círculo personalizado */
+.radiex label::before {
+    content: "";
+    display: inline-block;
+    width: 12px; /* Tamanho do círculo */
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px; /* Espaço entre o círculo e o texto */
+    border: 2px solid #eadd93; /* Cor da borda do círculo */
+    background-color: #39371F; /* Cor de fundo do círculo */
+}
+/*Estilo do círculo quando selecionado*/
+.radiex input[type="radio"]:checked + label::before {
+    background-color: #00B2B0; /* Cor de fundo quando selecionado */
+    border-color: #00B2B0; /* Cor da borda quando selecionado */
+}
+/* Adicione a classe quando o botão de rádio estiver selecionado */
+.radiex label.selected::before {
+    background-color: #fff;
+    border-color: #eadd93;
+}
+.radiex label:hover::before {
+    background-color: #fff; /* Cor de fundo quando houver hover */
+    border-color: #eadd93; /* Cor da borda quando houver hover */
+}
+.radiex input[type="radio"] {
+    display: none;
+}
+/*botao login*/
+button{
+background-color: #39371F;
+border-color: #000000;
+color: #FFFFFF;
+padding: 6px;
+font-weight:400;
+font-size: 15pt;
+margin-top: 20px;
+border-radius: 14px;
+cursor: pointer;
+outline: invert;
+transition: all .4s ease-out;
+width:200%;
+max-width: 1800px;
+margin: 20;
+height: 50px;
+}
+/*fundo do botex*/
+button:hover{
+background-color: #000000;
+color: #fff;
+}
+
+.justify-center{
+display: flex;
+justify-content: center;
+}
+
+.ladex ul a{
+color: #eadd93;
+font-weight: bold;
+text-decoration: none;
+transition: all .3s ease-out;
+}
+.ladex ul a:hover{
+color: #fffdfd;
+}
+
+/**/
+.justify-center{
+    display: flex;
+    justify-content: center;
+}  
+#qtdjuros{
+    color: #fff;
+    padding: 0.2em;
+    border: 1px solid #000000;
+    /* box-shadow: 2px 2px 2px rgba(0,0,0,0.2); */
+    display: block;
+    font-size: 100%;
+    border-radius: 6px;
+    background-color: #39371F;
+}
+.opcoes_credito select:focus{
+    /* color: #eadd93; */
+    color: #fff;
+    background: #000000;
+}
+.opcoes_credito{
+    color: #000000;
+    position: absolute;
+    top: -2px;
+    right:2px;
+}
