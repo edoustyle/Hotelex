@@ -20,6 +20,7 @@
     $result = mysqli_query($conexao, "INSERT INTO usuarios(email,cpf,nome_completo,senha)VALUES('$email','$cpf','$nome','$senha')");
   }
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

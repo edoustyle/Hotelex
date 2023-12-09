@@ -11,20 +11,20 @@ body {
   background-image: url(../images/Design_sem_nome_2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed
-  
+  background-attachment: fixed;
+  overflow: hidden;
 }
-.circle{
-  position: absolute;
-  top: 290px;
-  left: 1160px;
-  right: 0px;
-  width: 50%;
-  height: 50%;
+.circle {
+  position: relative;
+  top: 130px;
+  margin-left: 1100px;
+  flex-grow: 1;
+  width: 35%;
+  height: 35%;
   background: #eb29391e;
   clip-path: circle();
   padding: 0px;
-}
+} 
 .sliders{
   margin:0 auto;
   width: 800px;
@@ -52,12 +52,14 @@ body {
   margin-left: 20px;
 }
 /*manual*/
-.manual-navigacao{
+.manual-navegacao{
   position:absolute;
   width: 800px;
   margin-top: 50px;
   display: flex;
   justify-content: center;
+  top: 65vh;
+  left: -7vh;
 }
 .manual-btn{
   border: 2px solid #FFF;
@@ -85,33 +87,35 @@ body {
   margin-left: -75%;
 }
 /*automatico*/
-.navigacao-auto div{
+.navegacao-auto div{
   border: 2px solid #20a6ff;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
-  transition: 1s;
+  transition: 3.5s;
 }
-.navigacao-auto{
+.navegacao-auto{
   position: absolute;
   width: 800px;
   margin-top: 450px;
   display: flex;
   justify-content: center;
+  top: 65vh;
+  left: -7vh;
 }
-.navigacao-auto div:not(:last-child){
+.navegacao-auto div:not(:last-child){
   margin-right: 30px;
 }
-#radio1:checked~.navigacao-auto .auto-btn1{
+#radio1:checked~.navegacao-auto .auto-btn1{
   background-color: #FFF;
 }
-#radio2:checked~.navigacao-auto .auto-btn2{
+#radio2:checked~.navegacao-auto .auto-btn2{
   background-color: #FFF;
 }
-#radio3:checked~.navigacao-auto .auto-btn3{
+#radio3:checked~.navegacao-auto .auto-btn3{
   background-color: #FFF;
 }
-#radio4:checked~.navigacao-auto .auto-btn4{
+#radio4:checked~.navegacao-auto .auto-btn4{
   background-color: #FFF;
 }
 /*fim dos slides*/
@@ -144,20 +148,14 @@ body {
     color: #eadd93;
     font-family:'Roboto', sans-serif;
 }
-.ladex k2{
+.ladex k2 {
   position: absolute;
-    text-decoration: none;
-    font-size: 19px;
-    max-width: 450px;
-    align-items:center;
-    width: 40%;
-    right: 200px;
-    nav-down: 10px;
-    bottom: 20px;
-    text-align: center;
-    justify-content:end;
-    color: #eadd93;
-    font-family:'', sans-serif;
+  font-size: 1.5vh;
+  left: 175vh;
+  bottom: 2vh;
+  text-align: center;
+  color: #eadd93;
+  font-family: 'Lato', 'Sans-serif';
 }
 /*posicao do quadrado*/
 .container {
@@ -168,44 +166,48 @@ body {
 }
 /*forma do login quadadex*/
 .card {
+  position: relative;
+  flex-grow: 1;
+  bottom: 80vh;
   background-color: #eadd93;
-  padding: 140px;
-  border-radius: 20%;
+  padding: 5vh;
+  border-radius: 15%;
+  margin-left: 10vh;
   /*sombrex*/
   box-shadow: 3px 3px 1px 0px #00000060
 }
-/*mexe um pouco com o titulo*/
+/*Faça seu login*/
 h1{
+  position: relative;
   font-size: 62px;
   text-align: center;
-  margin-bottom: 10px;
+  top: 4vh;
   color: #000000;
   font-family:'Adumu';
   font-weight:30;
 }
 /*mexe com email sennha*/
 .label-float input{
-  width: 139%;
+  position:relative;
+  flex-grow: 1;
+  left: 12vh;
+  top: 4vh;
   padding: 10px 10px;
-  display: block;
   border: 1;
-  border-bottom: 3px solid #000000;
-  border-top: 3px solid #000000;
   background-color: transparent;
   outline: black;
-  min-width: 50px;
+  width: 50vh;
+  min-width: 50vh;
   font-size: 30px;
   transition: all .3s ease-out;
   border-radius: 14px;
-  margin-top: -20px;
 }
 /*espessura do quadradex quando clica*/
 .label-float{
   position:relative;
-  left:-100px;
+  left:-10vh;
+  top:5vh;
   padding-top: 12px;
-  margin-top: 7%;
-  margin-bottom: 0%;
 }
 
 .label-float input:focus{
@@ -216,19 +218,20 @@ h1{
 /*posicao do email senha*/
 .label-float label{
   color: #000000;
-  top: 10;
-  left: 1;
-  margin-top: -38px;
-  margin-left: 10px;
+  top: 4vh;
+  left: 0vh;
+  margin-top: 50vh;
+  margin-left: 13vh;
   transition: all .3s ease-out;
   position: absolute;
 }
 /*posicao dos email e senha mas quando clica em baixex*/
 .label-float input:focus + label,
 .label-float input:valid + label{
+  position: relative;
   font-size: 14px;
-  margin-top:0;
-  margin-left: 0;
+  margin-top: 0px;
+  margin-left: 12vh;
   color: #000000
 }
 .label-float select{
@@ -242,18 +245,17 @@ button{
   background-color: #39371F;
   border-color: #000000;
   color: #FFFFFF;
-  padding: 6px;
-  font-weight:400;
+  padding: 1vh;
   font-size: 15pt;
-  margin-top: 20px;
   border-radius: 14px;
   cursor: pointer;
   outline: invert;
   transition: all .4s ease-out;
-  width:200%;
-  max-width: 1800px;
-  margin: 20;
-  height: 50px;
+  width:40vh;
+  max-width: 180vh;
+  margin: 2vh;
+  height: 5vh;
+  margin-top: 9vh;
 }
 /*fundo do botex*/
 button:hover{
@@ -270,6 +272,7 @@ p{
   color: #39371F;
   font-size: 14pt;
   text-align: center;
+
 }
 
 p a{
@@ -281,8 +284,10 @@ p a{
 c{
   color: #000000;
   font-size: 14pt;
-  text-align:  100px;
-  margin-left: 50px;
+  text-align: 100px;
+  margin-left: 12vh;
+  bottom: 2vh;
+  position:relative; 
 }
 .ladex ul a{
   color: #eadd93;
@@ -354,17 +359,20 @@ p a:hover{
 /**/
 .fa-eye{
   position: absolute;
-  top: 15px;
-  right: -170px;
+  left: 61vh;
   cursor: pointer;
   color: #000000;
 }
 
  #msgError{
+  position: relative;
+  top: 4.5vh;
   text-align: center;
   color: #ff0000;
   background-color: #ffbbbb;
   padding: 10px;
   border-radius: 4px;
   display: none;
+  margin-bottom: -5vh;
 }
+
