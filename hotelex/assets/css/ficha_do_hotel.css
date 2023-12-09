@@ -65,10 +65,9 @@ section{
 /*forma do login quadadex*/
 .card {
     background-color: #eadd93;
-    padding: 180px;
-    border-radius: 20%;
-    width: 100vh;
-    height: 500px;
+    padding: 50vh;
+    border-radius: 18vh;
+    height: 100vh;
     margin-left: 190vh;
     /*sombrex*/
     box-shadow: 3px 3px 1px 0px #00000060;
@@ -79,13 +78,159 @@ section{
 .card2{
     background-color: #39371F;
     padding: 140px;
-    width:70%;
-    height: 100px;
-    border-radius: 5%;
-    margin-left: -20%;
-    margin-top:10px;
+    width:54vh;
+    height: 14vh;
+    border-radius: 3vh;
+    margin-left: 46%;
+    margin-top:60vh;
+    border: 3px solid #000000;
     /*sombrex*/
 }
+.card3{
+    position: absolute;
+    top: -86vh;
+    background-color: #39371F;
+    width:40vh;
+    height: 14vh;
+    border-radius: 3vh;
+    left: 100vh;
+    top:50vh;
+    border: 3px solid #000000;
+}
+.card4{
+    position: absolute;
+    top: -14.5vh;
+    background-color: #39371F;
+    width:40vh;
+    height: 14vh;
+    border-radius: 3vh;
+    left: 145vh;
+    top:50vh;
+    border: 3px solid #000000;
+}
+.card5{
+    position: absolute;
+    background-color: #39371F;
+    width:85vh;
+    height: 50vh;
+    border-radius: 3vh;
+    left: 100vh;
+    top:70vh;
+    border: 3px solid #000000;
+}
+#qtdquarto{
+    color: #000;
+    padding: 0.2em;
+    border: 2px solid #000000;
+    /* box-shadow: 2px 2px 2px rgba(0,0,0,0.2); */
+    display: block;
+    width: 24vh;
+    font-size: 120%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #eadd93;
+  }
+.selecta select:focus{
+    /* color: #eadd93; */
+    color: #fff;
+    background: #000000;
+}
+.selecta{
+    text-align: center;
+    align-items:center;
+    color: #fff;
+    position: absolute;
+    top:40px;
+    left:5vh;
+    font-size: 150%;
+}
+.selecta2 select:focus{
+    /* color: #eadd93; */
+    color: #fff;
+    background: #000000;
+}
+.selecta2{
+    text-align: center;
+    align-items:center;
+    color: #fff;
+    position: absolute;
+    top:32vh;
+    left:5vh;
+    font-size: 150%;
+}
+.selecta3 select:focus{
+    /* color: #eadd93; */
+    color: #fff;
+    background: #000000;
+}
+.selecta3{
+    text-align: center;
+    align-items:center;
+    color: #fff;
+    position: absolute;
+    top:40px;
+    left:55vh;
+    font-size: 150%;
+}
+.selecta4 select:focus{
+    /* color: #eadd93; */
+    color: #fff;
+    background: #000000;
+}
+.selecta4{
+    text-align: center;
+    align-items:center;
+    color: #fff;
+    position: absolute;
+    top:32vh;
+    left:55vh;
+    font-size: 150%;
+}
+.conteudo{
+    margin-top: 3vh;
+    color: #fff;
+    font-size: 3vh;
+}
+input[type="date"] {
+    padding-left: 30px; /* Ajuste conforme necessário */
+    appearance: none;
+    background-color: #39371F; /* Cor de fundo desejada */
+    color: #fff; /* Cor do texto desejada */
+    border: 1.5px solid #ccc; /* Cor da borda desejada */
+    border-radius: 5px; /* Borda arredondada */
+    /* position: relative; */
+    margin-top: 1vh;
+    height: 30px;
+    font-size: 20px;
+}
+
+/* Adicione estilos específicos para navegadores que suportam o seletor de intervalo */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #ccc;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    width: 30px; /* Ajuste conforme necessário */
+    height: 30px; /* Ajuste conforme necessário */
+    cursor: pointer;
+}
+  
+/* Mudar a cor quando o mouse passa sobre o calendário */
+input[type="date"]:hover {
+    background-color: #000; /* Cor de fundo ao passar o mouse */
+  }
+  
+  /* Mudar a cor quando um dia é clicado (em foco) */
+  input[type="date"]:focus {
+    background-color: #c0c0c0; /* Cor de fundo ao clicar */
+  }
+  
+  /* Mudar a cor de fundo dos dias do calendário ao passar o mouse */
+  input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    background-color: #fff; /* Cor de fundo ao passar o mouse sobre o ícone do calendário */
+  }
+  
+
 .texto_right{
     text-align:initial;
     position: relative;
@@ -94,28 +239,34 @@ section{
     margin-right: -120%;
 }
 .titulex{
-margin-top: -130px;
+    margin-top: -130px;
 }
 /*mexe um pouco com o titulo*/
 h1{
-font-size: 62px;
-text-align: center;
-position: relative;
-margin-bottom: 10px;
-color: #000000;
-font-family:'Adumu';
-font-weight:30;
-}
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    margin-bottom: 10px;
+    color: #000000;
+    font-family:'Adumu';
+    font-weight:30;
+    right: 160vh;
+    top: 30vh;
+} 
 h1-1{ 
-font-size: 40px;
-text-align:center;
-color: #000000;
-font-family:'Adumu';
-font-weight:30;
+    position: relative;
+    font-size: 40px;
+    text-align:center;
+    color: #000000;
+    font-family:'Adumu';
+    font-weight:30;
+    top: -26vh;
+    left: 45vh;
+    white-space: nowrap;
 
 }
 h1-2-1{ 
-    font-size:30px;
+    font-size:5vh;
     color: #fff;
     font-family:'Adumu';
     font-weight:30;
@@ -125,7 +276,7 @@ h1-2-1{
     text-align: right;
 }
 h1-2-2{ 
-    font-size:11px;
+    font-size:2vh;
     color: #fff;
     font-family:'Roboto';
     top: -120px;
@@ -136,15 +287,45 @@ h1-2-2{
 .texto_right2{
     text-align:initial;
     position: relative;
-    right: 111px;
-    top:-70px;
+    right: 6vh;
+    top:-40px;
 }
 h3{
     color: #fff;
     top:0px;
     position: relative;
     right: -6px;
+    font-size: 3vh;
+}
+.ladex_esquerdex{
+    position: absolute;
+    background-color: transparent;
+    width: 43vh;
+    white-space: pre-line;
+    top: 90vh;
+    left: 17vh;
+    text-align: left;
+}
+h4{
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Adumu';
+    font-weight: 1;
+    margin-top: -10px;
+}
+h4-1{
+    top: -10px;
     font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    display: flex;
+}
+.nota{
+    gap: 5px;
+    display: flex;
+}
+.radiex{
+    font-size: 2.4vh;
 }
 .radiex label{
     display: flex;
@@ -156,8 +337,8 @@ h3{
 .radiex label::before {
     content: "";
     display: inline-block;
-    width: 12px; /* Tamanho do círculo */
-    height: 12px;
+    width: 2vh; /* Tamanho do círculo */
+    height: 2vh;
     border-radius: 50%;
     margin-right: 10px; /* Espaço entre o círculo e o texto */
     border: 2px solid #eadd93; /* Cor da borda do círculo */
@@ -221,6 +402,7 @@ color: #fffdfd;
 
 /**/
 .justify-center{
+    margin-top: 24vh;
     display: flex;
     justify-content: center;
 }  
@@ -230,7 +412,8 @@ color: #fffdfd;
     border: 1px solid #000000;
     /* box-shadow: 2px 2px 2px rgba(0,0,0,0.2); */
     display: block;
-    font-size: 100%;
+    font-size: 110%;
+    right: inherit;
     border-radius: 6px;
     background-color: #39371F;
 }
@@ -242,6 +425,21 @@ color: #fffdfd;
 .opcoes_credito{
     color: #000000;
     position: absolute;
-    top: -2px;
-    right:2px;
+    top: -4px;
+    right:5vh;
 }
+.box2 {
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+    background-color: white;
+    overflow: hidden;
+    position: absolute;
+    top:45vh;
+    right: 142vh;
+  }
+  .custom-size{
+    width: 70vh; 
+    height: 100%; 
+    margin-left: 0vh;
+  }

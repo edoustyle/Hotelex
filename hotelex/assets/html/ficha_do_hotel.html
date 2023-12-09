@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="../css/ficha_do_hotel.css">
-      <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
+      <link rel="stylesheet" type="text/css" href="../fontawesome/releases/v6.5.1/css/all.css">
       <title>Home</title>
   </head>
     <body>
@@ -21,10 +21,45 @@
             <div class='container'>
             <div class='card'>
                 <div class="titulex">
-                    <h1> Anuncie sua propriedade </h1>
+                    <h1> Hotel<br>Brasil </h1>
                 </div>
                 <br>
-                <h1-1> Pagamento </h1-1>
+                <h1-1> Dados para a reserva </h1-1>
+                <div class="box2">
+                    <img src="../images/Hotel_Brasil.png" alt="Imagem 5" class="custom-size">
+                </div>
+                <div class="ladex_esquerdex">
+                    <hr style="color: #333; background-color: #333; height: 2px; border: none;">
+                    <h4>Comodidas Oferecidas:</h4>
+                    <h4-1>Wi-Fi Gratuito
+                        Banheiro Privativo
+                        Estacionamento Privado
+                        Piscina
+                        Aceita Pets
+                        Café da Manhã
+                        Almoço
+                        Janta
+                    </h4-1>
+                    <hr style="color: #333; background-color: #333; height: 2px; border: none;">
+                    <h4>Comodidades do Quarto</h4>
+                    <h4-1>Serviço de Quarto
+                        Frigobar
+                        Hidromassagem
+                        Banheira
+                        TV
+                    </h4-1>
+                    <hr style="color: #333; background-color: #333; height: 2px; border: none;">
+                    <h4>Avaliação média dos Hóspedes</h4>
+                    <h4-1>
+                        <div class="nota">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-light fa-star"></i>
+                        </div>
+                    </h4-1>
+                </div>
                 <div class='card2'>
                     <div class='texto_right'>
                         <h1-2-1>Métodos de pagamento</h1-2-1><br>
@@ -63,18 +98,67 @@
                     </div>
                 </div>
                 <div class="card3">
-
+                    <div class="conteudo">
+                        <i class="fa-thin fa-calendar"></i>
+                        <label for="txtData">Check in - Entrada</label>
+                        <input type="date" id="txtData" name="data">
+                    </div>
                 </div>
+
                 <div class="card4">
-                    
+                    <div class="conteudo">
+                        <i class="fa-thin fa-calendar"></i>
+                        <label for="txtData">Check out - Saída</label>
+                        <input type="date" id="txtData" name="data">
+                    </div>
                 </div>
                 <div class="card5">
-                    
+                    <div class="selecta">
+                        <label for="qtdquarto"><strong>NUMERO<br> DE CAMAS</strong></label>
+                        <select id="qtdquarto" required>
+                          <option selected disabled value="">Selecione</option>
+                          <option>4</option>
+                          <option>3</option>
+                          <option>2</option>
+                          <option>1</option>
+                        </select>
+                    </div>
+                    <div class="selecta2">
+                        <label for="qtdquarto"><strong>TIPO<br> DE CAMA</strong></label>
+                        <select id="qtdquarto" required>
+                          <option selected disabled value="">Selecione</option>
+                          <option>Casal</option>
+                          <option>Solteiro</option>
+                          <option>Beliche</option>
+                        </select>
+                    </div>
+                    <div class="selecta3">
+                        <label for="qtdquarto"><strong>TIPO <br> DE ACOMODAÇÃO</strong></label>
+                        <select id="qtdquarto" required>
+                          <option selected disabled value="">Selecione</option>
+                          <option>Quarto</option>
+                          <option>Suíte</option>
+                        </select>
+                    </div>
+                    <div class="selecta4">
+                        <label for="qtdquarto"><strong>QUANTIDADE<br> DE RESERVAS</strong></label>
+                        <select id="qtdquarto" required>
+                          <option selected disabled value="">Selecione</option>
+                          <option>7</option>
+                          <option>6</option>
+                          <option>5</option>
+                          <option>4</option>
+                          <option>3</option>
+                          <option>2</option>
+                          <option>1</option>
+                        </select>
+                    </div>
                 </div>
                 <div class='justify-center'>
-                <button>Assinar</button>
+                    <a href="./pagina_inicial.html">
+                        <button>Reservar Agora</button>
+                    </a>
                 </div>
-            
             </div>
             <script src="../js/pagamentex.js"></script>
         </div>
