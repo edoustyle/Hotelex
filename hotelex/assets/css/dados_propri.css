@@ -21,11 +21,14 @@ body {
   color: #FFF;
 }
 /*fim dos slides*/
+.ladex{
+  top:4vh;
+  
+  right:45vh;
+  position: absolute;
+}
 .ladex h2-2{
-  position:relative;
   width: 100%;
-  top: -100vh;
-  right:-300px;
   font-size: 50px;
   display: flex;
   align-items:center;
@@ -34,12 +37,9 @@ body {
   font-family:'Adumu', sans-serif;
 }
 .ladex span{
-  position: relative;
     font-weight: 100;
     font-size: 22px;
     width: 100%;
-    left:30vh;
-    top:-950px;
     nav-down: 10px;
     color: #eadd93;
     font-family:'Roboto', sans-serif;
@@ -53,13 +53,11 @@ section{
 }
 /*posicao do quadrado*/
 .container {
-  position:relative;
+  position: absolute;
   justify-content:center;
-  margin-right:100px;
-  margin-top: 0px;
   width: 100px;
-  left: -600px;
-  margin-bottom: 0px;
+  left: 12vh;
+  top: 120vh;
   display: flex;
   flex-direction: column;
   padding: 100px;
@@ -72,15 +70,13 @@ section{
 }
 /*forma do login quadradex*/
 .card {
-  top:100px;
   position: relative;
   background-color: #eadd93;
   padding: 300px;
   border-radius: 10%;
-  width: 800%;
-  right: 400%;
+  width: 100vh;
   display: block;
-
+  top: -110vh;
   /*sombrex*/
   box-shadow: 3px 3px 1px 0px #00000060
 }
@@ -144,7 +140,7 @@ h1{
   position:absolute;
   left:10vh;
   top:100vh;
-  width: 360px;
+  width: 43vh;
 }
 
 .label-float2 textarea{
@@ -198,7 +194,7 @@ h1{
 /*espessura do quadradex quando clica*/
 .label-float3{
   position:absolute;
-  left: 500px;
+  left: 60vh;
   margin-top: 46%;
   width: 240px;
 }
@@ -234,14 +230,12 @@ button{
   padding: 6px;
   font-weight:400;
   font-size: 15pt;
-  margin-top: 40px;
   border-radius: 14px;
   cursor: pointer;
   outline: invert;
   transition: all .4s ease-out;
   width:200%;
-  max-width: 1800px;
-  margin: 20;
+  max-width: 180px;
   height: 50px;
 }
 /*fundo do botex*/
@@ -251,9 +245,11 @@ button:hover{
 }
 
 .justify-center{
+  position: relative;
   display: flex;
   justify-content: center;
   margin-top: 800px;
+  right: 14px;
 }
 .btn_social ul li:hover::before { transition:0.4s; top:0%; }
 .btn_social ul li a:hover       { color:#eadd93; }
@@ -295,24 +291,24 @@ button:hover{
   /* overflow: hidden; */
   display: block;
   top: 74vh;
-  right:125vh;
+  right:139vh;
 }
 h2{
   position: absolute;
   top: 70vh;
-  right: 105.5vh;
+  right: 119.5vh;
   color: #000000;
 }
 label h2{
   position: relative;
   top: -37vh;
-  left: 62vh;
+  left: 75.5vh;
   white-space:nowrap;
 }
 label h2-1{
   position: relative;
   top: -37vh;
-  left: 62vh;
+  left: 75.5vh;
   color: #000;
   font-family: 'Roboto';
   font-weight: bold;
@@ -338,31 +334,13 @@ label h2-1{
   border-radius:13px;
   border:1px solid #000000;
 }
-/* Estilize o elemento para mostrar o nome do arquivo */
- /* Estilize o elemento para mostrar o nome do arquivo */
- .upload .file-list {
-  margin-top: 10px;
-}
-
-.upload .file-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.upload .file-name {
-  margin-left: 10px;
-  color: #333;
-}
 
 .remove-icon {
   margin-left:700px;
   cursor: pointer;
-  font-size: 20px;
   position: relative;
-  top: 7.8vh;
-  left: -100vh;
-  color: red;
+  top: 7.3vh;
+  left: -99vh;
 }
 
 .testezex {
@@ -449,7 +427,7 @@ label h2-1{
   --border-color:#000;
   font-family: Verdana, sans-serif;
   top:-36vh;
-  left: 61.7vh;
+  left: 75.4vh;
   margin-bottom: 3vh;
 }
 

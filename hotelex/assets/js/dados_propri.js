@@ -173,6 +173,7 @@ btnConfirm.addEventListener('click', ()=>{
 function updateFileList(input) {
   const fileListElement = document.getElementById('fileList');
   fileListElement.innerHTML = ''; // Limpa a lista antes de atualizar
+  
 
   for (const file of input.files) {
       const fileItem = document.createElement('div');
@@ -185,6 +186,7 @@ function updateFileList(input) {
       const removeIcon = document.createElement('i');
       removeIcon.className = 'fa-solid fa-circle-xmark fa-2xs remove-icon';
       removeIcon.style.color = 'red'; // Cor do ícone
+      removeIcon.style.fontSize = '18px'
 
     removeIcon.onclick = function() {
         // Remove o item da lista ao clicar no ícone de remoção
@@ -194,6 +196,9 @@ function updateFileList(input) {
     fileItem.appendChild(removeIcon);
     fileListElement.appendChild(fileItem);
   }
+  // Ajuste da posição inicial
+  fileListElement.style.marginTop = '-22vh';
+  fileListElement.style.left = '0vh';
 }
 // Adiciona a lógica do rótulo flutuante para cada textarea
 document.querySelectorAll('.label-float2 textarea').forEach(function (textarea) {

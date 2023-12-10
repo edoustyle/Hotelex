@@ -184,6 +184,8 @@ body {
   /*sombrex*/
   box-shadow: 3px 3px 1px 0px #00000060;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
 .card2{
@@ -193,7 +195,7 @@ body {
   height: 55vh;
   border-radius: 5%;
   left:5vh;
-  top: 32vh;
+  top: 30vh;
   display: flex;
 }
 .card3{
@@ -220,12 +222,12 @@ body {
 /*mexe um pouco com o titulo*/
 h1{
   font-size: 62px;
-  text-align: center;
   position: absolute;
   top: 3vh;
   color: #000000;
   font-family:'Adumu';
   font-weight:30;
+  right: 1vh;
 }
 h1-1{ 
   font-size: 40px;
@@ -234,7 +236,7 @@ h1-1{
   font-family:'Adumu';
   font-weight:30;
   position: absolute;
-  top: 24vh;
+  top: 22vh;
   left: 20vh;
 }
 h1-2{ 
@@ -303,10 +305,10 @@ button{
   cursor: pointer;
   outline: invert;
   transition: all .4s ease-out;
-  width:200%;
+  width: 130%;
   max-width: 1800px;
-  margin: 20;
   height: 50px;
+  margin-left: 3vh;
 }
 /*fundo do botex*/
 button:hover{
@@ -336,4 +338,23 @@ button:hover{
   position: absolute;
   top: 88vh;
   left: 24vh;
+}
+p{
+  position: absolute;
+  top: 86vh;
+  left: 34.5vh;
+  color: #39371F;
+  font-size: 14pt;
+  text-align: center;
+}
+
+p a{
+  color: #39371F;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+p a:hover{
+  color: #ffffff;
 }

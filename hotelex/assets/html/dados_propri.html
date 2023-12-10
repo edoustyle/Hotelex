@@ -8,12 +8,8 @@
     <link rel="stylesheet" href="../css/dados_propri.css">
     <script src="../js/jquery-1.2.6.pack.js" type="text/javascript"></script>
     <script src="../js/jquery.maskedinput-1.1.4.pack.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../fontawesome/releases/v6.5.1/css/all.css">
     <title>Dados Parceria</title>
-    <script>
-        $(document).ready(function(){	
-		$("#cnpj").mask("99.999.999/9999-99");
-	    });
-    </script>
 </head>
 <body>
   <div class="produto-container">
@@ -94,8 +90,10 @@
               <strong>FAZER UPLOAD</strong>
           </div>
           <!-- Input de arquivo oculto -->
-          <input type="file" id="imagex" name="fimg" accept="image/*" multiple onchange="updateFileList(this)">
-          <!-- <i class="fa-solid fa-circle-xmark fa-2xs" style="color: #ff0000;"></i> -->
+          <div class="mexe_lista">
+            <input type="file" id="imagex" name="fimg" accept="image/*" multiple onchange="updateFileList(this)">
+            <!-- <i class="fa-solid fa-circle-xmark fa-2xs" style="color: #ff0000;"></i> -->
+          </div>
         </div>
 
         <form action="" method="get">
