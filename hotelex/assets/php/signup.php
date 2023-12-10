@@ -43,7 +43,6 @@
 <body>
   <div class="produto-container">
     <div class="circle">
-      <form action="./signup.php" method="POST">
       <div class="sliders">
 
         <div class="slides">
@@ -56,16 +55,16 @@
 
           <!--slide imagens-->
           <div class="slide first">
-            <img src="../images/nature-3082832_1280.jpg"alt="Imagem 1"/>
+            <img src="../images/Screenshot_2615.png"alt="Imagem 1"/>
           </div>
           <div class="slide">
-            <img src="../images/water-839590_1280.jpg"alt="Imagem 2"/>
+            <img src="../images/Screenshot_2617.png"alt="Imagem 2"/>
           </div>
           <div class="slide">
-            <img src="../images/polynesia-3021072_1280.jpg"alt="Imagem 3"/>
+            <img src="../images/Screenshot_2617.png"alt="Imagem 3"/>
           </div>
           <div class="slide">
-            <img src="../images/road-1072821_1280.jpg"alt="Imagem 4"/>
+            <img src="../images/Screenshot_2618.png"alt="Imagem 4"/>
           </div>
           <!--Fim de slide-->
 
@@ -88,11 +87,8 @@
 
       </div>
     </div>
-
     <header>
-      <i class="fa-light fa-reply"></i>
     </header>
-
     <div class="ladex">
       <h2> Hotelex</h2> <br>
       <span>RESERVE SEU REFÚGIO PERFEITO, ONDE CADA ESTADIA SE TORNA UMA EXPERIÊNCIA<BR> INESQUECÍVEL!</span>
@@ -106,54 +102,57 @@
     </div>
     <div class='container'>
       <div class='card'>
+        <h1> Cadastre-se </h1>
         
-          <h1> Cadastre-se </h1>
-          
-          <div id='msgError'></div>
-          <div id="msgSuccess"></div>
-          
-          <div class='label-float'>
-            <input type='email' name="email" id='email' paceholder='' required>
-            <label id='labelemail' for='email'>EMAIL</label>
-            <input type="tel" name="cpf" autocomplete="off" id="cpf" maxlength="14" paceholder='' required onkeyup="mascara_cpf()">
-            <label id='labelcpf' for='cpf'>CPF</label>
-            <input type='NomeCompleto' name="nome" id='nome' paceholder='tt' required>
-            <label id='labelNome' for='nome'>NOME COMPLETO</label>
+        <div id='msgError'></div>
+        <div id="msgSuccess"></div>
+        
+        <div class='label-float'>
+          <input type='email' id='email' paceholder='' required>
+          <label id='labelemail' for='email'>EMAIL</label>
+          <input type="tel" autocomplete="off" id="cpf" maxlength="14" paceholder='' required onkeyup="mascara_cpf()">
+          <label id='labelcpf' for='cpf'>CPF</label>
+          <input type='NomeCompleto' id='nome' paceholder='tt' required>
+          <label id='labelNome' for='nome'>NOME COMPLETO</label>
+        </div>
+        <div class='label-float'>
+          <input type='password' id='senha' paceholder='' required>
+          <label id='labelSenha' for='senha'>SENHA</label>
+          <i class="fa fa-eye" aria-hidden="true"></i>
+          <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
+        </div>
+        <div class='label-float'>
+            <input type='password' id='confirmSenha' paceholder='' required>
+            <label id='labelConfirmSenha' for='confirmSenha'>CONFIRME SUA SENHA</label>
           </div>
-          <div class='label-float'>
-            <input type='password' name="senha" id='senha' paceholder='' required>
-            <label id='labelSenha' for='senha'>SENHA</label>
-            <i class="fa fa-eye" aria-hidden="true"></i>
-            <!--<i class="fa fa-eye" aria-hidden="true"></i>-->
+        <div class='justify-center'>
+          <button onclick='entrar()'>CADASTRAR</button>
+        </div>
+        <p>
+              Já tem conta?
+              <a href="./signin.html">
+                Log-In
+              </a>
+              <br>
+              <a href="./pagina_inicial.html">
+                Voltar para a página inicial
+              </a>
+        </p>
+        <br>
+        <div class='justify-center'>
+        </div>
+        <div class='rede-sociais'> 
+          <c>OU USE UMA DAS SEGUINTES OPÇÕES</c>
           </div>
-          <div class='label-float'>
-              <input type='password' id='confirmSenha' paceholder='' required>
-              <label id='labelConfirmSenha' for='confirmSenha'>CONFIRME SUA SENHA</label>
-            </div>
           <div class='justify-center'>
-            <button onclick='entrar()' name='submit'>CADASTRAR</button>
           </div>
-          <p>
-                Já tem conta?
-                <a href="./signin.html">
-                  Log-In
-                </a>
-          </p>
-          <br>
-          <div class='justify-center'>
-          </div>
-          <div class='rede-sociais'> 
-            <c>OU USE UMA DAS SEGUINTES OPÇÕES</c>
-            </div>
-            <div class='justify-center'>
-            </div>
-            <nav class="btn_social">        
-              <ul>
-                  <li><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#" target="_blank" title="instagram"><i class="fa fa-google"></i></a></li>
-                  <li><a href="#" target="_blank" title="apple"><i class="fa fa-apple"></i></a></li>     
-              </ul>
-          </nav>
+          <nav class="btn_social">        
+            <ul>
+                <li><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" target="_blank" title="instagram"><i class="fa fa-google"></i></a></li>
+                <li><a href="#" target="_blank" title="apple"><i class="fa fa-apple"></i></a></li>     
+            </ul>
+        </nav>
       </div>
     </div>
     <script src="../js/signup.js"></script>
