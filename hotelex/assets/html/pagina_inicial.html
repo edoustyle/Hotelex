@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/pagina_inicial.css">
-    <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../fontawesome/releases/v6.5.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <title>Página inicial</title>
@@ -139,13 +139,27 @@
             <img src="../images/Logo_Hotelex-removebg-preview.png"alt="loguex"/>
         </div>
         <div class="selecta">
-            <select id="qtdquarto" required>
-              <option selected disabled value=""><h7>Português-BR</h7></option>
-              <option>English</option>
-              <option>Español</option>
+            <select id="qtdquarto" required onchange="changeFlag(this.value)">
+                <option value="brazil">Português-BR</option>
+                <option value="usa">English</option>
+                <option value="spain">Español</option>
             </select>
-            <img width="48" height="48" src="https://img.icons8.com/color/48/brazil.png" alt="brazil" class="bandeirabr"/>
+            <img id="brazil"  src="https://img.icons8.com/color/48/brazil.png" alt="brazil" class="bandeirabr" />
+            <img id="usa" src="https://img.icons8.com/color/48/usa.png" alt="usa" class="bandeirabr" style="display: none;"/>
+            <img id="spain" src="https://img.icons8.com/color/48/spain.png" alt="spain" class="bandeirabr" style="display: none;"/>
         </div>
+
+        <script>
+            function changeFlag(value) {
+                document.getElementById('brazil').style.display = 'none';
+                document.getElementById('usa').style.display = 'none';
+                document.getElementById('spain').style.display = 'none';
+
+                if (value) {
+                    document.getElementById(value).style.display = 'block';
+                }
+            }
+        </script>
         <ul class="contatos">
             <li>Atendimento</li>
             <li>Quem somos</li>

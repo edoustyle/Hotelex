@@ -201,7 +201,7 @@ section{
   background-color: #eadd93;
   padding: 140px;
   width: 60vh;
-  height: 60vh;
+  height: 64vh;
   border-radius: 20%;
   margin-left: 0px;
   right: 40vh;
@@ -266,11 +266,10 @@ h1{
   color: #000000
 }
 /*botao login*/
-button{
+.submitex{
   background-color: #39371F;
   border-color: #000000;
   color: #fff;
-  padding: 6px;
   font-weight:400;
   font-size: 15pt;
   margin-top: 40px;
@@ -280,11 +279,12 @@ button{
   transition: all .4s ease-out;
   width:200%;
   max-width: 1800px;
-  margin: 20;
+  margin-bottom: 20px;
   height: 50px;
+  width: 20vh;
 }
 /*fundo do botex*/
-button:hover{
+.submitex:hover{
   background-color: #000000;
   color: #ffffff;
 }
@@ -374,10 +374,7 @@ p a:hover{
 	transform: scale(1); 
 	transition:.4s; 
 }
-.justify-center{
-  display: flex;
-  justify-content: center;
-}
+
 .btn_social ul li:hover::before { transition:0.4s; top:0%; }
 .btn_social ul li a:hover       { color:#eadd93; }
 /**/
