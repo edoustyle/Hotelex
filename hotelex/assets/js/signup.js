@@ -182,9 +182,9 @@ function cadastrar(){
     msgError.setAttribute('style', 'display: none')
     msgError.innerHTML = ''
     
-    setTimeout(()=>{
-        window.location.href = './html/signin.html'
-    }, 3000)
+    // setTimeout(()=>{
+    //     window.location.href = './html/signin.html'
+    // }, 3000)
   
     
   } else {
