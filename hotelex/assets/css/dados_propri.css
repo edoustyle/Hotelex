@@ -576,3 +576,22 @@ label h2-1{
 .mult-select-tag .rounded {
   border-radius: .375rem;
 }
+p{
+  position: absolute;
+  top: 170vh;
+  left: 75.5vh;
+  color: #39371F;
+  font-size: 14pt;
+  text-align: center;
+}
+
+p a{
+  color: #39371F;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+p a:hover{
+  color: #ffffff;
+}
