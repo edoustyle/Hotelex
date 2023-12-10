@@ -11,20 +11,21 @@ body {
   background-image: url(../images/Design_sem_nome_2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden;
+  background-attachment: fixed
+  
 }
-.circle {
-  position: relative;
-  top: 130px;
-  margin-left: 1100px;
-  flex-grow: 1;
-  width: 35%;
-  height: 35%;
+.circle{
+  position: absolute;
+  top: 25vh;
+  left: 126vh;
+  right: 0px;
+  width: 30vw;
+  height: 30vw;
   background: #eb29391e;
   clip-path: circle();
   padding: 0px;
-} 
+  display: flex;
+}
 .sliders{
   margin:0 auto;
   width: 800px;
@@ -47,19 +48,21 @@ body {
   transition-duration: 2s;
 }
 .slide img{
-  width: 900px;
+  width: 100vh;
   margin-top: 0px;
-  margin-left: 20px;
+  margin-left: 0px;
+  display:flex;
+  min-width: 100vh; /* Tamanho mínimo */
+  max-width: 100vh; /* Tamanho máximo */
 }
 /*manual*/
-.manual-navegacao{
+.manual-navigacao{
   position:absolute;
   width: 800px;
-  margin-top: 50px;
+  margin-top: 12vh;
+  left: -11vh;
   display: flex;
   justify-content: center;
-  top: 65vh;
-  left: -7vh;
 }
 .manual-btn{
   border: 2px solid #FFF;
@@ -87,35 +90,34 @@ body {
   margin-left: -75%;
 }
 /*automatico*/
-.navegacao-auto div{
+.navigacao-auto div{
   border: 2px solid #20a6ff;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
-  transition: 3.5s;
+  transition: 1s;
 }
-.navegacao-auto{
+.navigacao-auto{
   position: absolute;
   width: 800px;
-  margin-top: 450px;
+  margin-top: 54.9vh;
+  left: -11vh;
   display: flex;
   justify-content: center;
-  top: 65vh;
-  left: -7vh;
 }
-.navegacao-auto div:not(:last-child){
+.navigacao-auto div:not(:last-child){
   margin-right: 30px;
 }
-#radio1:checked~.navegacao-auto .auto-btn1{
+#radio1:checked~.navigacao-auto .auto-btn1{
   background-color: #FFF;
 }
-#radio2:checked~.navegacao-auto .auto-btn2{
+#radio2:checked~.navigacao-auto .auto-btn2{
   background-color: #FFF;
 }
-#radio3:checked~.navegacao-auto .auto-btn3{
+#radio3:checked~.navigacao-auto .auto-btn3{
   background-color: #FFF;
 }
-#radio4:checked~.navegacao-auto .auto-btn4{
+#radio4:checked~.navigacao-auto .auto-btn4{
   background-color: #FFF;
 }
 /*fim dos slides*/
@@ -148,14 +150,20 @@ body {
     color: #eadd93;
     font-family:'Roboto', sans-serif;
 }
-.ladex k2 {
+.ladex k2{
   position: absolute;
-  font-size: 1.5vh;
-  left: 175vh;
-  bottom: 2vh;
-  text-align: center;
-  color: #eadd93;
-  font-family: 'Lato', 'Sans-serif';
+    text-decoration: none;
+    font-size: 19px;
+    max-width: 450px;
+    align-items:center;
+    width: 40%;
+    right: 200px;
+    nav-down: 10px;
+    bottom: 20px;
+    text-align: center;
+    justify-content:end;
+    color: #eadd93;
+    font-family:'', sans-serif;
 }
 /*posicao do quadrado*/
 .container {
@@ -166,48 +174,44 @@ body {
 }
 /*forma do login quadadex*/
 .card {
-  position: relative;
-  flex-grow: 1;
-  bottom: 80vh;
   background-color: #eadd93;
-  padding: 5vh;
-  border-radius: 15%;
-  margin-left: 10vh;
+  padding: 140px;
+  border-radius: 20%;
   /*sombrex*/
   box-shadow: 3px 3px 1px 0px #00000060
 }
-/*Faça seu login*/
+/*mexe um pouco com o titulo*/
 h1{
-  position: relative;
   font-size: 62px;
   text-align: center;
-  top: 4vh;
+  margin-bottom: 10px;
   color: #000000;
   font-family:'Adumu';
   font-weight:30;
 }
 /*mexe com email sennha*/
 .label-float input{
-  position:relative;
-  flex-grow: 1;
-  left: 12vh;
-  top: 4vh;
+  width: 139%;
   padding: 10px 10px;
+  display: block;
   border: 1;
+  border-bottom: 3px solid #000000;
+  border-top: 3px solid #000000;
   background-color: transparent;
   outline: black;
-  width: 50vh;
-  min-width: 50vh;
+  min-width: 50px;
   font-size: 30px;
   transition: all .3s ease-out;
   border-radius: 14px;
+  margin-top: -20px;
 }
 /*espessura do quadradex quando clica*/
 .label-float{
   position:relative;
-  left:-10vh;
-  top:5vh;
+  left:-100px;
   padding-top: 12px;
+  margin-top: 7%;
+  margin-bottom: 0%;
 }
 
 .label-float input:focus{
@@ -218,20 +222,19 @@ h1{
 /*posicao do email senha*/
 .label-float label{
   color: #000000;
-  top: 4vh;
-  left: 0vh;
-  margin-top: 50vh;
-  margin-left: 13vh;
+  top: 10;
+  left: 1;
+  margin-top: -38px;
+  margin-left: 10px;
   transition: all .3s ease-out;
   position: absolute;
 }
 /*posicao dos email e senha mas quando clica em baixex*/
 .label-float input:focus + label,
 .label-float input:valid + label{
-  position: relative;
   font-size: 14px;
-  margin-top: 0px;
-  margin-left: 12vh;
+  margin-top:0;
+  margin-left: 0;
   color: #000000
 }
 .label-float select{
@@ -245,17 +248,18 @@ button{
   background-color: #39371F;
   border-color: #000000;
   color: #FFFFFF;
-  padding: 1vh;
+  padding: 6px;
+  font-weight:400;
   font-size: 15pt;
+  margin-top: 20px;
   border-radius: 14px;
   cursor: pointer;
   outline: invert;
   transition: all .4s ease-out;
-  width:40vh;
-  max-width: 180vh;
-  margin: 2vh;
-  height: 5vh;
-  margin-top: 9vh;
+  width:200%;
+  max-width: 1800px;
+  margin: 20;
+  height: 50px;
 }
 /*fundo do botex*/
 button:hover{
@@ -272,7 +276,6 @@ p{
   color: #39371F;
   font-size: 14pt;
   text-align: center;
-
 }
 
 p a{
@@ -284,10 +287,8 @@ p a{
 c{
   color: #000000;
   font-size: 14pt;
-  text-align: 100px;
-  margin-left: 12vh;
-  bottom: 2vh;
-  position:relative; 
+  text-align:  100px;
+  margin-left: 50px;
 }
 .ladex ul a{
   color: #eadd93;
@@ -359,20 +360,17 @@ p a:hover{
 /**/
 .fa-eye{
   position: absolute;
-  left: 61vh;
+  top: 15px;
+  right: -170px;
   cursor: pointer;
   color: #000000;
 }
 
  #msgError{
-  position: relative;
-  top: 4.5vh;
   text-align: center;
   color: #ff0000;
   background-color: #ffbbbb;
   padding: 10px;
   border-radius: 4px;
   display: none;
-  margin-bottom: -5vh;
 }
-

@@ -22,10 +22,11 @@ body {
 }
 .circle{
   position: absolute;
-  top: 290px;
-  right: -340px;
-  width: 50%;
-  height: 50%;
+  top: 25vh;
+  left: 126vh;
+  right: 0px;
+  width: 30vw;
+  height: 30vw;
   background: #eb29391e;
   clip-path: circle();
   padding: 0px;
@@ -53,15 +54,19 @@ body {
   transition-duration: 2s;
 }
 .slide img{
-  width: 900px;
+  width: 100vh;
   margin-top: 0px;
-  margin-left: 20px;
+  margin-left: 0px;
+  display:flex;
+  min-width: 100vh; /* Tamanho mínimo */
+  max-width: 100vh; /* Tamanho máximo */
 }
 /*manual*/
 .manual-navigacao{
   position:absolute;
   width: 800px;
-  margin-top: 50px;
+  margin-top: 12vh;
+  left: -11vh;
   display: flex;
   justify-content: center;
 }
@@ -101,7 +106,8 @@ body {
 .navigacao-auto{
   position: absolute;
   width: 800px;
-  margin-top: 450px;
+  margin-top: 54.9vh;
+  left: -11vh;
   display: flex;
   justify-content: center;
 }
@@ -125,7 +131,7 @@ body {
   position:absolute;
   width: 100%;
   top: 60px;
-  right: 33px;
+  right: 36vh;
   font-size: 50px;
   display: flex;
   align-items:center;
@@ -141,9 +147,9 @@ body {
     max-width: 450px;
     align-items:center;
     width: 100%;
-    right: -90px;
+    right: 22vh;
     nav-down: 10px;
-    top: 120px;
+    top: 12vh;
     text-align: center;
     justify-content:end;
     color: #eadd93;
@@ -157,7 +163,7 @@ body {
     max-width: 450px;
     align-items:center;
     width: 40%;
-    right: -100px;
+    right: 22vh;
     nav-down: 0px;
     bottom: 0px;
     text-align: center;
@@ -179,7 +185,6 @@ section{
   margin-right:90px;
   margin-left: -200px;
   margin-top: 20px;
-  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
   padding: 0 15px 0 15px;
@@ -189,16 +194,18 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
-  
 }
 /*forma do login quadradex*/
 .card {
   position: absolute;
   background-color: #eadd93;
   padding: 140px;
+  width: 60vh;
+  height: 60vh;
   border-radius: 20%;
-  margin-left: -100px;
+  margin-left: 0px;
+  right: 40vh;
+  top:14vh;
   display: block;
   /*sombrex*/
   box-shadow: 3px 3px 1px 0px #00000060
@@ -207,10 +214,10 @@ section{
 h1{
   font-size: 70px;
   text-align: center;
-  margin-bottom: 0px;
   color: #000000;
   font-family:'Adumu';
   font-weight:30;
+  margin-top: -6vh;
 }
 /*mexe com email sennha*/
 .label-float input{
