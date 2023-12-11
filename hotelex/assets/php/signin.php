@@ -110,7 +110,7 @@
             <i class="fa-light fa-reply"></i>
           </header>
           <div class="ladex">
-            <h2> Hotelex</h2> <br>
+            <a href="./pagina_inicial.html"><h2>Hotelex</h2></a> <br>
             <span>RESERVE SEU REFÚGIO PERFEITO, ONDE CADA ESTADIA SE TORNA UMA EXPERIÊNCIA<BR> INESQUECÍVEL!</span>
             <ul> 
               <k2><a href= "./signup.html">Condições de uso</a><br>
@@ -147,11 +147,6 @@
                     Não tem uma conta?
                     <a href="../html/signup.html">
                       Cadastre-se
-                    </a>
-                    <br>
-                    Ou volte para o ínicio:
-                    <a href="../html/pagina_inicial.html">
-                      Home
                     </a>
               </p>
               <br>

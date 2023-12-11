@@ -21,9 +21,9 @@ body {
   color: #FFF;
 }
 /*fim dos slides*/
-.ladex{
+ .ladex{
   top:4vh;
-  
+  text-decoration: none;
   right:45vh;
   position: absolute;
 }
@@ -594,4 +594,8 @@ p a{
 
 p a:hover{
   color: #ffffff;
+}
+
+a{
+  text-decoration: none;
 }

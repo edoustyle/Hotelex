@@ -131,7 +131,7 @@
                 <div class="text"><h5-2-4>R$ 389</h5-2-4></div>
                 <div class="text"><h5-2-5>por diária
                     (inclui impostos e taxas)</h5-2-5></div>
-                <div class="ofertex5"><h3>Saiba mais</h3></div>
+                <div class="ofertex5"><a href='../php/ficha_do_hotel.php?cnpj=12345678901234'><h3>Saiba mais</h3></a></div>
             </div>
             <div class="box3">
                 <img src="../images/Hotel_Centro.png" alt="Imagem 8" class="custom-size4">
@@ -141,7 +141,7 @@
                 <div class="text"><h5-2-4>R$ 389</h5-2-4></div>
                 <div class="text"><h5-2-5>por diária 
                     (inclui impostos e taxas)</h5-2-5></div>
-                <div class="ofertex5"><h3><a href='../html/ficha_do_hotel.html'>Saiba mais</a></h3></div>
+                <div class="ofertex5"><a href='../php/ficha_do_hotel.php?cnpj=56789012345678'><h3>Saiba mais</h3></a></div>
             </div>
             <div class="box3">
                 <img src="../images/Hotel_Brasil.png" alt="Imagem 8" class="custom-size4">
@@ -151,7 +151,8 @@
                 <div class="text"><h5-2-4>R$ 389</h5-2-4></div>
                 <div class="text"><h5-2-5>por diária 
                     (inclui impostos e taxas)</h5-2-5></div>
-                <div class="ofertex5"><h3>Saiba mais</h3></div>
+                <div class="ofertex5"><a href='../php/ficha_do_hotel.php?cnpj=78901234567890'><h3>Saiba mais</h3></a></div>
+
             </div>
             <div class="box3">
                 <img src="../images/Hotel_Collection.png" alt="Imagem 8" class="custom-size4">
@@ -161,7 +162,7 @@
                 <div class="text"><h5-2-4>R$ 389</h5-2-4></div>
                 <div class="text"><h5-2-5>por diária 
                     (inclui impostos e taxas)</h5-2-5></div>
-                <div class="ofertex5"><h3>Saiba mais</h3></div>
+                <div class="ofertex5"><a href='../php/ficha_do_hotel.php?cnpj=90123456789012'><h3>Saiba mais</h3></a></div>
             </div>
         </div>
         <div class="ofertex2"><h3>Ver ofertas</h3></div>

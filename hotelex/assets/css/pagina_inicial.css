@@ -7,17 +7,20 @@
   padding:0;
   font-family: 'Roboto', sans-serif;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 .container{
   position: relative;
-  height: 0vh;
+ 
 }
 .card{
   top:0px;
   position: relative;
   background-color:#39371F;
   padding: 450px;
-  width: 500%;
-  right: 400%;
   display: block;
   text-align: center;
 }
@@ -28,16 +31,18 @@
   padding: 300px;
   width: 469%;
   height: 2000px;
-  right: 400%;
   display: block;
+  margin-right: calc(100vw - 100%);
 }
-.card3{
-    position: relative;
-    display: block;
-    padding: 100px;
-    height: 70vh;
-    color: #000;
+.card3 {
+  position: relative;
+  display: block;
+  padding: 100px;
+  height: 70vh;
+  color: #000;
+  max-width: 100%;
 }
+
 .justify-center{
     position: absolute;
     top: 90vh;
@@ -456,6 +461,9 @@ h6{
 a{
   color: #000;
   text-decoration: none;
+}
+.ofertex5 a{
+  color: #fff;
 }
 .custom-size{
   width: 70vh; 
