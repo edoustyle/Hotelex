@@ -145,7 +145,7 @@
               </p>
               <p>
                     Não tem uma conta?
-                    <a href="./signup.html">
+                    <a href="../html/signup.html">
                       Cadastre-se
                     </a>
                     <br>
