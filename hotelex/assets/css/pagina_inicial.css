@@ -16,6 +16,10 @@ body {
   position: relative;
  
 }
+nav{
+  background-color: #eadd93;
+  color: #000;
+}
 .card{
   top:0px;
   position: relative;

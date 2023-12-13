@@ -12,131 +12,127 @@
     <title>Dados Parceria</title>
 </head>
 <body>
-  <div class="produto-container">
-    <div class="ladex">
-      <a href="./pagina_inicial.html"><h2-2>Hotelex</h2-2></a> <br>
-      <span>RESERVE SEU REFÚGIO PERFEITO, ONDE CADA ESTADIA SE TORNA UMA EXPERIÊNCIA INESQUECÍVEL!</span>
-    </div>
-    <div class='container'>
-      <div class='card'>
-        <h1> Dados Cadastrais </h1>
-        
-        <div id='msgError'></div>
-        <div id="msgSuccess"></div>
-        
-        <div class='label-float'>
-          <input type='NomeCompleto' id='nome' paceholder='tt' required>
-          <label id='labelNome' for='nome'>NOME</label>
-          <input id="cnpj" type="tel" paceholder="" maxlength="18" required>
-          <label id='labelcnpj' for='cnpj'>CNPJ</label>
-          <input type='email' id='email' paceholder='' required>
-          <label id='labelemail' for='email'>EMAIL DA EMPRESA</label>
-          <input id="endereco" type="text" paceholder="" required>
-          <label id='labelEndereco' for='endereco'>ENDEREÇO</label>
-          <input id="telefone" type="text" paceholder="" maxlength="11" required>
-          <label id='labelTelefone' for='telefone'>TELEFONE</label>
-          <input id="site" type="text" paceholder="" required>
-          <label id='labelsite' for='site'>SITE OFICIAL (Opcional)</label>
-        </div>
-        <div class='label-float2'>
-          <textarea type="text" id="desc" rows="5" cols="30"></textarea>
-          <label id='labeldesc' for="desc">DESCRIÇÃO DO HOTEL</label>
-          <textarea id="politicas" rows="5" cols="30"></textarea>
-          <label id='labelpoliti' for='politicas'>POLITICAS DE RESERVA E CANCELAMENTO</label>
+  <form action="../php/dados_propri.php" method="POST" enctype="multipart/form-data">
+    <div class="produto-container">
+      <div class="ladex">
+        <a href="./pagina_inicial.html"><h2-2>Hotelex</h2-2></a> <br>
+        <span>RESERVE SEU REFÚGIO PERFEITO, ONDE CADA ESTADIA SE TORNA UMA EXPERIÊNCIA INESQUECÍVEL!</span>
+      </div>
+      <div class='container'>
+        <div class='card'>
+          <h1> Dados Cadastrais </h1>
           
+          <div id='msgError'></div>
+          <div id="msgSuccess"></div>
+          
+          <div class='label-float'>
+            <input type='NomeCompleto' id='nome' name= 'nome' paceholder='tt' required>
+            <label id='labelNome' for='nome'>NOME</label>
+            <input id="cnpj" type="tel" paceholder="" name="cnpj" maxlength="14" required>
+            <label id='labelcnpj' for='cnpj'>CNPJ</label>
+            <input type='email' id='email' paceholder='' name='email' required>
+            <label id='labelemail' for='email'>EMAIL DA EMPRESA</label>
+            <input id="endereco" type="text" paceholder="" name="endereco" required>
+            <label id='labelEndereco' for='endereco'>ENDEREÇO</label>
+            <input id="telefone" type="text" paceholder="" name="telefone" maxlength="11" required>
+            <label id='labelTelefone' for='telefone'>TELEFONE</label>
+            <input id="site" type="text" paceholder="" name="site" required>
+            <label id='labelsite' for='site'>SITE OFICIAL (Opcional)</label>
+          </div>
+          <div class='label-float2'>
+            <textarea type="text" id="desc" rows="5" name="descricao" cols="30"></textarea>
+            <label id='labeldesc' for="desc">DESCRIÇÃO DO HOTEL</label>
+            <textarea id="politicas" rows="5" name="politica_reserva" cols="30"></textarea>
+            <label id='labelpoliti' for='politicas'>POLITICAS DE RESERVA E CANCELAMENTO</label>
+            
+          </div>
+          <div class="testezex">
+            <div class="tooltip-container">
+                <div class="info">
+                    <i class="fa fa-solid fa-circle-info"></i>
+                </div>
+                <div class="content-tooltips">
+                    <span class="tooltip-text">Descreve seu hotel mencionando a localidade.</span>
+                </div>
+            </div>
+    
+            <div class="tooltip-container">
+                <div class="info">
+                    <i class="fa fa-solid fa-circle-info"></i>
+                </div>
+                <div class="content-tooltips">
+                    <span class="tooltip-text">Detalhes sobre o procedimento de reserva e cancelamento.</span>
+                </div>
+            </div>
         </div>
-        <div class="testezex">
-          <div class="tooltip-container">
-              <div class="info">
-                  <i class="fa fa-solid fa-circle-info"></i>
-              </div>
-              <div class="content-tooltips">
-                  <span class="tooltip-text">Descreve seu hotel mencionando a localidade.</span>
-              </div>
-          </div>
-  
-          <div class="tooltip-container">
-              <div class="info">
-                  <i class="fa fa-solid fa-circle-info"></i>
-              </div>
-              <div class="content-tooltips">
-                  <span class="tooltip-text">Detalhes sobre o procedimento de reserva e cancelamento.</span>
-              </div>
-          </div>
-      </div>
-      <div class='label-float3'>
-        <input type='text' id='email2' paceholder='' required>
-        <label id='labelConfirmSenha' for='email2'>EMAIL</label>
-        <input type='password' id='senha' paceholder='' required>
-        <label id='labelSenha' for='senha'>SENHA</label>
-        <i class="fa fa-eye" aria-hidden="true"></i>
-      </div>
-        <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
-        <div class="selecta">
-          <label for="qtdquarto"><strong>NUMERO MÁXIMO DE CAMAS<br> DISPONIVEIS POR QUARTO</strong></label>
-          <select id="qtdquarto" required>
-            <option selected disabled value="">Selecione</option>
-            <option>5</option>
-            <option>4</option>
-            <option>3</option>
-            <option>2</option>
-            <option>1</option>
-          </select>
-        </div>
-        <h2>FOTOS PARA A DIVULGAÇÃO</h2>
-        <div class="upload">
-          <!-- Elemento de botão personalizado -->
-          <div class="custom_upload" onclick="document.getElementById('imagex').click()">
-              <strong>FAZER UPLOAD</strong>
-          </div>
-          <!-- Input de arquivo oculto -->
-          <div class="mexe_lista">
-            <input type="file" id="imagex" name="fimg" accept="image/*" multiple onchange="updateFileList(this)">
-            <!-- <i class="fa-solid fa-circle-xmark fa-2xs" style="color: #ff0000;"></i> -->
-          </div>
-        </div>
-
-        <form action="" method="get">
-          <div>
-            <label for="frutas"><h2>COMODIDADES DO <br>HOTEL OFERECIDAS</h2></label>
-            <select id="frutas" name="frutas" multiple>
-                <option value="Wi-Fi Gratuito">Wi-Fi Gratuito</option>
-                <option value="Estacionamento Privado">Estacionamento Privado</option>
-                <option value="Piscina">Piscina</option>
-                <option value="Aceita Pets">Aceita Pets</option>
-                <option value="Café da manhã">Café da manhã</option>
-                <option value="Almoço">Almoço</option>
-                <option value="Janta">Janta</option>
-                <option value="Academia">Academia</option>
+        <!-- <div class='label-float3'>
+          <input type='text' id='email2' paceholder='' required>
+          <label id='labelConfirmSenha' for='email2'>EMAIL</label>
+          <input type='password' id='senha' paceholder='' required>
+          <label id='labelSenha' for='senha'>SENHA</label>
+          <i class="fa fa-eye" aria-hidden="true"></i>
+        </div> -->
+          <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+          <div class="selecta">
+            <label for="qtdquarto"><strong>NUMERO MÁXIMO DE CAMAS<br> DISPONIVEIS POR QUARTO</strong></label>
+            <select id="qtdquarto" name="qtdquarto" required>
+              <option selected disabled value="">Selecione</option>
+              <option>5</option>
+              <option>4</option>
+              <option>3</option>
+              <option>2</option>
+              <option>1</option>
             </select>
           </div>
-        </form>
-        <form action="" method="get">
-          <div>
-            <label for="frutas2"><h2-1>COMODIDADES DE <br>QUARTO OFERECIDAS</h2-1></label>
-            <select id="frutas2" name="frutas2" multiple>
-                <option value="Ar-Condicionado">Ar-Condicionado</option>
-                <option value="Banheiro privativo">Banheiro privativo</option>
-                <option value="Serviço de quarto">Serviço de quarto</option>
+          <h2>FOTOS PARA A DIVULGAÇÃO</h2>
+          <div class="upload">
+            <!-- Elemento de botão personalizado -->
+            <div class="custom_upload" onclick="document.getElementById('imagex').click()">
+                <strong>FAZER UPLOAD</strong>
+            </div>
+            <!-- Input de arquivo oculto -->
+            <div class="mexe_lista">
+              <input type="file" id="imagex" name="imagem" accept="image/*" multiple onchange="updateFileList(this)">
+            </div>
+          </div>
+
+            <div>
+              <label for="frutas"><h2>COMODIDADES DO <br>HOTEL OFERECIDAS</h2></label>
+              <select id="frutas" name="como_hotel[]" multiple>
+                <option value="Wi_Fi_Gratuito">Wi-Fi Gratuito</option>
+                <option value="Estacionamento_Privado">Estacionamento Privado</option>
+                <option value="Piscina">Piscina</option>
+                <option value="Aceita_Pets">Aceita Pets</option>
+                <option value="Café_da_manhã">Café da manhã</option>
+                <option value="Almoco">Almoço</option>
+                <option value="Janta">Janta</option>
+                <option value="Academia">Academia</option>
+              </select>
+            </div>
+            <div>
+              <label for="frutas2"><h2-1>COMODIDADES DE <br>QUARTO OFERECIDAS</h2-1></label>
+              <select id="frutas2" name="como_quarto[]" multiple>
+                <option value="Ar_Condicionado">Ar-Condicionado</option>
+                <option value="Banheiro_privativo">Banheiro privativo</option>
+                <option value="Serviço_de_quarto">Serviço de quarto</option>
                 <option value="Frigobar">Frigobar</option>
                 <option value="Hidromassagem">Hidromassagem</option>
                 <option value="Banheira">Banheira</option>
-            </select>
+              </select>
+            </div>
+          <script src="../js/multipla_escolha.js"></script>
+          <script>
+            new MultiSelectTag('frutas2')
+            new MultiSelectTag('frutas')  // id
+        </script>
+          <div class="file-list" id="fileList"></div>
+          <div class='justify-center'>
+            <input class="submitex" type="submit" name="submit" value="Cadastrar">
           </div>
-        </form>
-        <script src="../js/multipla_escolha.js"></script>
-        <script>
-          new MultiSelectTag('frutas2')
-          new MultiSelectTag('frutas')  // id
-      </script>
-        <div class="file-list" id="fileList"></div>
-        <div class='justify-center'>
-          <button onclick='entrar()'>CADASTRAR</button>
         </div>
       </div>
+      <script src="../js/dados_propri.js"></script>
     </div>
-    <script src="../js/dados_propri.js"></script>
-    
-  </div>
+  </form>
 </body>
 </html>

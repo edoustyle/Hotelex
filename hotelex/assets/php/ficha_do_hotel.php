@@ -1,11 +1,10 @@
-<!-- <?php
+<?php
     include('config.php');
     // Definindo o CNPJ do hotel
     if (isset($_GET['cnpj'])) {
         // Obtenha o valor do parâmetro cnpj
         $cnpjHotel = $_GET['cnpj'];
     }
-    //$cnpjHotel = "90123456789012";
 
     // Array de comodidades
     $comodidades = array('WIFI_gratuito', 'Estacionamento_privado', 'Piscina', 'Aceita_pets', 'Café_da_manhã', 'Almoco', 'Janta', 'Academia');
@@ -13,46 +12,9 @@
     // Convertendo o array de comodidades em uma string para a cláusula SELECT
     $colunas = implode(', ', $comodidades);
 
-    // Consulta SQL
-    $sql = "SELECT $colunas FROM comodidades_hotel WHERE cnpj_hotel = '$cnpjHotel'";
-
-    // Executando a consulta
-    $result = $conexao->query($sql);
-
-    // Verificando se a consulta foi bem-sucedida
-    if ($result === false) {
-        die("Erro na consulta: " . $conexao->error);
-    }
-
-    // Verificando se há pelo menos uma linha de resultado
-    if ($result->num_rows > 0) {
-        // Iterando sobre as linhas de resultado
-        // while ($row = $result->fetch_assoc()) {
-        //     // Agora, você pode acessar os valores das comodidades usando $row['WIFI_gratuito'], $row['Estacionamento_privado'], etc.
-        //     // Faça o que você precisa com esses valores aqui
-        //     print_r($row);
-        // }
-        while ($row = $result->fetch_assoc()) {
-            //echo "<h4>Comodidades Disponíveis:</h4>";
-            echo "<ul>";
-            
-            // Iterar sobre as comodidades
-            foreach ($comodidades as $comodidade) {
-                // Verificar se a comodidade está disponível (valor = '1')
-                if ($row[$comodidade] == '1') {
-                    echo "<h4-1>$comodidade</h4-1>";
-                }
-            }
-            
-            echo "</ul>";
-        }
-    } else {
-        echo "Nenhuma comodidade encontrada para o CNPJ: $cnpjHotel";
-    }
-
     // Fechando a conexão
     $conexao->close();
-?> -->
+?>
 
 
 <!DOCTYPE html>
@@ -81,17 +43,10 @@
                     <?php
                         include('config.php');
                             // Definindo o CNPJ do hotel (substitua isso com o valor real)
-                            //$cnpjHotel = "90123456789012";
-                        
-                            // Executando a consulta
-                            $result = $conexao->query($sql);
-                        
-                            // Iterar sobre os resultados
-                            while ($row = $result->fetch_assoc()) {
-                                // Exibir o nome do hotel
-                                $nomeHotel = obterNomeHotel($conexao, $cnpjHotel); // Função fictícia, você precisa implementar
-                                echo "<h1>$nomeHotel</h1>";
-                            }
+                            
+                            // Exibir o nome do hotel
+                            $nomeHotel = obterNomeHotel($conexao, $cnpjHotel); // Função fictícia, você precisa implementar
+                            echo "<h1 style='margin-left:240px;'>$nomeHotel</h1>";
                             // Função fictícia para obter o nome do hotel
                             function obterNomeHotel($conexao, $cnpjHotel) {
                                 $sql = "SELECT nome_empresa FROM hotel WHERE cnpj = '$cnpjHotel'";
@@ -114,22 +69,11 @@
                     <!-- <img src="../images/Hotel_Brasil.png" alt="Imagem 5" class="custom-size"> -->
                     <?php
                         include('config.php');
-                        // Definindo o CNPJ do hotel (substitua isso com o valor real)
-                        //$cnpjHotel = "90123456789012";
-                    
-                        // Consulta SQL
-                        //$sql = "SELECT caminho FROM imagens_hotel WHERE cnpj_hotel = '$cnpjHotel'";
-                        
-                        // Executando a consulta
-                        $result = $conexao->query($sql);
-                        
-                        // Iterar sobre os resultados
-                        while ($row = $result->fetch_assoc()) {
+
                             // Exibir a imagem do hotel
                             $caminhoImagem = obterCaminhoImagem($conexao, $cnpjHotel); // Função fictícia, você precisa implementar
                             echo "<img src='$caminhoImagem' alt='Imagem 5' class='custom-size'>";
                             //print_r($caminhoImagem);
-                        }
 
                         // Função fictícia para obter o caminho da imagem
                         function obterCaminhoImagem($conexao, $cnpjHotel) {
@@ -157,11 +101,9 @@
                     <h4>Comodidas Oferecidas:</h4>
                     <?php
                         include('config.php');
-                            // Definindo o CNPJ do hotel (substitua isso com o valor real)
-                            //$cnpjHotel = "90123456789012";
 
                             // Array de comodidades
-                            $comodidades = array('WIFI_gratuito', 'Estacionamento_privado', 'Piscina', 'Aceita_pets', 'Café_da_manhã', 'Almoco', 'Janta', 'Academia');
+                            $comodidades = array('Wi_Fi_Gratuito', 'Estacionamento_Privado', 'Piscina', 'Aceita_Pets', 'Café_da_manhã', 'Almoco', 'Jantar', 'Academia');
                         
                             // Convertendo o array de comodidades em uma string para a cláusula SELECT
                             $colunas = implode(', ', $comodidades);
@@ -198,24 +140,10 @@
                             $conexao->close();
                         ?>
                     
-                    <h4-1>
-                        <!-- Wi-Fi Gratuito
-                        Banheiro Privativo
-                        Estacionamento Privado
-                        Piscina
-                        Aceita Pets
-                        Café da Manhã
-                        Almoço
-                        Janta -->
-                    </h4-1>
-                    
                     <hr style="color: #333; background-color: #333; height: 2px; border: none;">
                     <h4>Comodidades do Quarto</h4>
                     <?php
                         include('config.php');
-                            // Definindo o CNPJ do hotel (substitua isso com o valor real)
-                            //$cnpjHotel = "90123456789012";
-
                             // Array de comodidades
                             $comodidades = array('Ar_Condicionado', 'Banheiro_privativo', 'Serviço_de_Quarto', 'Frigobar', 'Hidromassagem', 'Banheira');
                         
@@ -254,23 +182,36 @@
                             // Fechando a conexão
                             $conexao->close();
                         ?>
-                    <h4-1>Serviço de Quarto
-                        <!-- Frigobar
-                        Hidromassagem
-                        Banheira
-                        TV -->
                     </h4-1>
                     <hr style="color: #333; background-color: #333; height: 2px; border: none;">
-                    <h4>Avaliação média dos Hóspedes</h4>
-                    <h4-1>
-                        <div class="nota">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-light fa-star"></i>
-                        </div>
-                    </h4-1>
+                    <h4>Avaliação média dos Hóspedes</h4>.
+                    <?php
+                        include("config.php");
+                        $sql = "SELECT quantidade_avaliacao FROM avaliacao WHERE cnpj_hotel = '$cnpjHotel'";
+                        $result = $conexao->query($sql);
+                        $sql2 = "SELECT numero_estrela FROM avaliacao WHERE cnpj_hotel = '$cnpjHotel'";
+                        $result2 = $conexao->query($sql2);
+
+                        if ($result) {
+                            $row = $result->fetch_assoc();
+                            $quantidade_avaliacao = $row['quantidade_avaliacao'];
+                            echo "<h4-1> ($quantidade_avaliacao) Avaliações </h4-1>";
+                            
+                        }
+                        if ($result2) {
+                            $row2 = $result2->fetch_assoc();
+                            $quantidade_estrela= $row2['numero_estrela'];
+                            // Gerar estrelas com base na quantidade_avaliacao
+                            for ($i = 0; $i < $quantidade_estrela; $i++) {
+                                echo "<h4-1 style='display: inline-block;'><i class='fa-solid fa-star'></i></h4-1>";
+                            }
+                            for ($i=$quantidade_estrela; $i < 5; $i++) { 
+                                echo "<h4-1 style='display: inline-block;'><i class='fa-light fa-star'></i></h4-1>";
+                            }
+                        }
+                        // Fechar a conexão
+                        $conexao->close();
+                    ?>
                 </div>
                 <div class='card2'>
                     <div class='texto_right'>

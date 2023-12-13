@@ -223,7 +223,7 @@ h1{
   position: absolute;
 }
 /*botao login*/
-button{
+.submitex{
   background-color: #39371F;
   border-color: #000000;
   color: #fff;
@@ -239,7 +239,7 @@ button{
   height: 50px;
 }
 /*fundo do botex*/
-button:hover{
+.submitex:hover{
   background-color: #000000;
   color: #ffffff;
 }

@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="../fontawesome/releases/v6.5.1/css/all.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #eadd93; margin-top:0px;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <?php
@@ -30,16 +30,12 @@
             </a>
 
         </div>
-        <div class="d-flex">
-            <i class="fa-light fa-right-from-bracket" style="color: #ffffff; font-size: 25px;"></i>
-            <a href="sair.php" class="fa-light fa-right-from-bracket"></a>
-        </div>
     </nav>
     <br>
     <!-- <?php
         echo "<h10>Bem vindo $logado</h10>";
     ?> -->
-    <div class='container'>
+    <div class='container' style='margin-top: -20px;'>
         <div class="card">
             
         </div>
@@ -50,16 +46,11 @@
         
         <div class="logo">
             <img src="../images/Logo_Hotelex-removebg-preview_1.png"alt="loguex"/>
-            <div class="user-cont">
-                <a href= "signup.html"><h1-4>CADASTRE-SE</h1-4></a>
-                <a href= "signin.html"><h1-4>LOGIN</h1-4></a>
+            <div class="user-cont" style='right:300px;'>
+                <h1-4><a href="sair.php" class="fa-light fa-right-from-bracket" ></a></h1-4>
             </div>
-            <div class="d-flex">
-            <i class="fa-light fa-right-from-bracket" style="color: #ffffff; font-size: 25px;"></i>
-            <a href="sair.php" class="fa-light fa-right-from-bracket"></a>
-            </div>
-                <a href= "./anuncia.html"><h1-3>Anuncie sua propriedade</h1-3></a>
-            </div>
+            <a href= "../html/anuncia.html"><h1-3>Anuncie sua propriedade</h1-3></a>
+        </div>
         
         <div class="card2">
         
