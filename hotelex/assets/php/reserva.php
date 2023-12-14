@@ -4,23 +4,25 @@
     include("sistema.php");
     if (isset($_POST['submit'])) {
 
-        print_r('Data entrada: ' .$_POST['data_entrada']);
-        print_r('<br>');
-        print_r('Data saída: ' .$_POST['data_saida']);
-        print_r('<br>');
-        print_r('Quantidade de camas: ' .$_POST['qtdcamas']);
-        print_r('<br>');
-        print_r('Tipo de cama: ' .$_POST['tipo_cama']);
-        print_r('<br>');
-        print_r('Tipo de acomodo: ' .$_POST['tipo_acomo']);
-        print_r('<br>');
-        print_r('Quantidade de reservas: ' .$_POST['qtd_reservas']);
-        print_r('<br>');
-        print_r('Tipo de pagamento: ' .$_POST['tipo_pagamentex']);
-        print_r('<br>');
-        print_r('CNPJ: ' .$_POST['cnpj']);
-        print_r('<br>');
-        print_r($logado);
+        // print_r('Data entrada: ' .$_POST['data_entrada']);
+        // print_r('<br>');
+        // print_r('Data saída: ' .$_POST['data_saida']);
+        // print_r('<br>');
+        // print_r('Quantidade de camas: ' .$_POST['qtdcamas']);
+        // print_r('<br>');
+        // print_r('Tipo de cama: ' .$_POST['tipo_cama']);
+        // print_r('<br>');
+        // print_r('Tipo de acomodo: ' .$_POST['tipo_acomo']);
+        // print_r('<br>');
+        // print_r('Quantidade de reservas: ' .$_POST['qtd_reservas']);
+        // print_r('<br>');
+        // print_r('Tipo de pagamento: ' .$_POST['tipo_pagamentex']);
+        // print_r('<br>');
+        // print_r('CNPJ: ' .$_POST['cnpj']);
+        // print_r('<br>');
+        // print_r('Preço reserva: ' .$_POST['precoReserva']);
+        // print_r('<br>');
+        // print_r($logado);
 
         $cnpjHotel = $_POST['cnpj'];
         $data_entra = $_POST['data_entrada'];
@@ -30,6 +32,7 @@
         $tipo_acomo = $_POST['tipo_acomo'];
         $qtd_reservas = $_POST['qtd_reservas'];
         $tipex_pagamento = $_POST['tipo_pagamentex'];
+        //$preco_reserva = $_POST['novoPreco'];
     }
     // if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cnpj'])) {
     //     $cnpjHotelReserva = $_POST['cnpj'];
@@ -40,9 +43,9 @@
 
     
     // Suponha que você tenha o email do usuário
-    $emailUsuario = $logado;
+     $emailUsuario = $logado;
 
-    // Consultar o CPF associado ao email na tabela usuario
+    // // Consultar o CPF associado ao email na tabela usuario
     $sqlConsulta = "SELECT cpf FROM usuario WHERE email = '$emailUsuario'";
 
     $resultado = $conexao->query($sqlConsulta);

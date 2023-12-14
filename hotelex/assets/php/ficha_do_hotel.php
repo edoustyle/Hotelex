@@ -23,31 +23,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="../css/ficha_do_hotel.css">
       <link rel="stylesheet" type="text/css" href="../fontawesome/releases/v6.5.1/css/all.css">
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
       <title>Home</title>
-      <script>
-        // Função para atualizar o preço ao vivo
-        function atualizarPreco() {
-            // Obter valores do formulário
-            var qtdCamas = parseInt(document.getElementById('qtdcamas').value);
-            var tipoAcomodacao = document.getElementById('tipo_acomo').value;
-            var tipoCama = document.getElementById('tipo_cama').value;
-            var qtdReservas = parseInt(document.getElementById('qtd_reservas').value);
-
-            // Fazer uma solicitação ao PHP para calcular o preço
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'calcular_preco.php', true);
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState == 4 && xhr.status == 200) {
-                    // Atualizar o elemento HTML com o preço calculado
-                    document.getElementById('precoReserva').innerHTML = 'Preço Total da Reserva: R$ ' + xhr.responseText;
-                }
-            };
-
-            // Enviar os dados do formulário para o PHP
-            xhr.send('qtdcamas=' + qtdCamas + '&tipo_acomo=' + tipoAcomodacao + '&tipo_cama=' + tipoCama + '&qtd_reservas=' + qtdReservas);
-        }
-    </script>
     </head>
     <body>
         <form action="reserva.php" method="POST">
@@ -243,7 +220,7 @@
                         <br>
                         <div class="texto_right2">
                             <!-- Exibir o preço calculado -->
-                            <!-- <h3 id="precoReserva"><?php echo isset($precoReserva) ? 'Preço Total da Reserva: R$ ' . number_format($precoReserva, 2, ',', '.') : ''; ?></h3> -->
+                            
                             <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
                             <div class="radiex">
                                 <label>
@@ -280,8 +257,8 @@
                         </div>
                     </div>
                     <div class="card5">
-                        <div class="preco_reserva" style="margin-top:20vh; font-size:5vh;"></div>
-                        <p id="precoReserva" style="font-size:4vh; color:#fff;"></p>
+                    <div class="preco_reserva" style="margin-top:22vh; font-size:5vh;"></div>
+                        <p id="precoReserva" style="font-size:4vh; color:#fff;"><?php echo isset($precoReserva) ? 'Preço Total da Reserva: R$ ' . number_format($precoReserva, 2, ',', '.') : ''; ?></p>
                         <div class="selecta">
                             <label for="qtdquarto"><strong>NUMERO<br> DE CAMAS</strong></label>
                             <select id="qtdCamas" name="qtdcamas" onchange="atualizarPreco()" required>
@@ -359,6 +336,20 @@
 
                         // Atualizar o elemento HTML com o preço calculado
                         document.getElementById('precoReserva').innerHTML = 'Preço: R$' + precoTotal.toFixed(2);
+
+                        // Envie o novo valor para o servidor usando AJAX
+                        $.ajax({
+                            type: 'POST',
+                            url: 'reserva.php', // Substitua pelo caminho correto do arquivo PHP
+                            data: { submit: 'submit', novoPreco: precoTotal }, // Adicione 'submit' aos dados
+                            success: function(response) {
+                                console.log('Preço atualizado com sucesso!');
+                            },
+                            error: function(error) {
+                                console.error('Erro ao atualizar o preço:', error);
+                            }
+                        });
+
                     }
                     </script>
 

@@ -107,6 +107,17 @@
             <!-- <button onclick='cadastrar()' name="submit">CADASTRAR</button> -->
             <input class="submitex" type="submit" name="submit" value="Casdastrar">
           </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              // Aguarda o carregamento completo do DOM
+              var botaoCadastrar = document.querySelector('.submitex');
+          
+              botaoCadastrar.addEventListener('click', function () {
+                // Quando o botão for clicado, redirecione para a outra página
+                window.location.href = 'signin.html';
+              });
+            });
+          </script>
           <p>
                 Já tem conta?
                 <a href="./signin.html">
