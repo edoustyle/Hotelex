@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+      <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="../css/ficha_do_hotel.css">
-      <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
+      <link rel="stylesheet" href="../css/pagamentex.css">
+      <link rel="stylesheet" type="text/css" href="../fontawesome/releases/v6.5.1/css/all.css">
       <title>Home</title>
   </head>
     <body>
@@ -13,11 +15,11 @@
             <i class="fa-light fa-reply"></i>
             </header>
             <div class="ladex">
-                <a href="./pagina_inicial.html"><h2>Hotelex</h2></a> <br><br>
-                <span>RESERVE SEU REFÚGIO PERFEITO, ONDE CADA ESTADIA SE TORNA UMA EXPERIÊNCIA INESQUECÍVEL!</span>
+            <h2> Hotelex</h2> <br>
+            <span>RESERVE SEU REFÚGIO PERFEITO, ONDE CADA ESTADIA SE TORNA UMA EXPERIÊNCIA INESQUECÍVEL!</span>
             </div>
             <div class='container'>
-            <div class='card'>
+            <div class='card' style="margin-top: 20vh;">
                 <div class="titulex">
                     <h1> Anuncie sua propriedade </h1>
                 </div>
@@ -34,20 +36,7 @@
                         <div class="radiex">
                             <label>
                                 <input type="radio" name="devweb" value="frontend" checked>
-                                <i class="fa-regular fa-credit-card" style="color: #fff;"></i >
-                                    <!-- <h3> Crédito (em até 5x sem juros) </h3> -->
-                                        <!-- <label for="qtdquarto"><h3>Crédito</h3></label> -->
-                                        <h3>Crédito</h3>
-                                    <div class="opcoes_credito">
-                                        <select id="qtdjuros" required>
-                                          <option selected disabled value=""> Em até (5x sem juros)</option>
-                                          <option>(5x sem juros)</option>
-                                          <option>(4x sem juros)</option>
-                                          <option>(3x sem juros)</option>
-                                          <option>(2x sem juros)</option>
-                                          <option>(1x sem juros)</option>
-                                        </select>
-                                    </div>
+                                <i class="fa-regular fa-credit-card" style="color: #fff;"></i ><h3> Crédito (em até 5x sem juros) <i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i></h3>
                             </label>
                             <label>
                                 <input type="radio" name="devweb" value="frontend"checked>
@@ -60,8 +49,11 @@
                         </div>
                     </div>
                 </div>
-                <div class='justify-center'>
-                <button>Assinar</button>
+                
+                <div class='justify-center' style="margin-left: -100px;">
+                    <a href="../php/sistema.php">
+                        <button>Assinar</button>
+                    </a>
                 </div>
             
             </div>

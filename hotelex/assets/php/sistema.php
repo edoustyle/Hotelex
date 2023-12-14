@@ -116,8 +116,8 @@
             <h5-1>Opções mais procuradas por viajantes no Brasil</h5-1>
             <div class="box3">
                 <img src="../images/Hotel_Campinas.png" alt="Imagem 8" class="custom-size4">
-                <div class="text"><h5-2-1>9.0/10</h5-2-1></div>
-                <div class="text"><h5-2-2>Maravilhosa (182 avaliações)</h5-2-2></div>
+                <div class="text"><h5-2-1>5/5</h5-2-1></div>
+                <div class="text"><h5-2-2 style='left:240px;'>(92 avaliações)</h5-2-2></div>
                 <div class="text"><h5-2-3>Hotel Campinas</h5-2-3></div>
                 <div class="text"><h5-2-4>R$ 389</h5-2-4></div>
                 <div class="text"><h5-2-5>por diária
@@ -126,20 +126,20 @@
             </div>
             <div class="box3">
                 <img src="../images/Hotel_Centro.png" alt="Imagem 8" class="custom-size4">
-                <div class="text"><h5-2-1>9.0/10</h5-2-1></div>
-                <div class="text"><h5-2-2>Maravilhosa (182 avaliações)</h5-2-2></div>
+                <div class="text"><h5-2-1>4/5</h5-2-1></div>
+                <div class="text"><h5-2-2 style='left:240px;'>(150 avaliações)</h5-2-2></div>
                 <div class="text"><h5-2-3>Hotel Centro</h5-2-3></div>
-                <div class="text"><h5-2-4>R$ 389</h5-2-4></div>
+                <div class="text"><h5-2-4>R$ 1000</h5-2-4></div>
                 <div class="text"><h5-2-5>por diária 
                     (inclui impostos e taxas)</h5-2-5></div>
                 <div class="ofertex5"><a href='../php/ficha_do_hotel.php?cnpj=56789012345678'><h3>Saiba mais</h3></a></div>
             </div>
             <div class="box3">
                 <img src="../images/Hotel_Brasil.png" alt="Imagem 8" class="custom-size4">
-                <div class="text"><h5-2-1>9.0/10</h5-2-1></div>
-                <div class="text"><h5-2-2>Maravilhosa (182 avaliações)</h5-2-2></div>
+                <div class="text"><h5-2-1>3/5</h5-2-1></div>
+                <div class="text"><h5-2-2 style='left:240px;'>(90 avaliações)</h5-2-2></div>
                 <div class="text"><h5-2-3>Hotel Brasil</h5-2-3></div>
-                <div class="text"><h5-2-4>R$ 389</h5-2-4></div>
+                <div class="text"><h5-2-4>R$ 591</h5-2-4></div>
                 <div class="text"><h5-2-5>por diária 
                     (inclui impostos e taxas)</h5-2-5></div>
                 <div class="ofertex5"><a href='../php/ficha_do_hotel.php?cnpj=78901234567890'><h3>Saiba mais</h3></a></div>
@@ -147,10 +147,10 @@
             </div>
             <div class="box3">
                 <img src="../images/Hotel_Collection.png" alt="Imagem 8" class="custom-size4">
-                <div class="text"><h5-2-1>9.0/10</h5-2-1></div>
-                <div class="text"><h5-2-2>Maravilhosa (182 avaliações)</h5-2-2></div>
+                <div class="text"><h5-2-1>4/5</h5-2-1></div>
+                <div class="text"><h5-2-2 style='left:240px;'>(182 avaliações)</h5-2-2></div>
                 <div class="text"><h5-2-3>Hotel Collection</h5-2-3></div>
-                <div class="text"><h5-2-4>R$ 389</h5-2-4></div>
+                <div class="text"><h5-2-4>R$ 440</h5-2-4></div>
                 <div class="text"><h5-2-5>por diária 
                     (inclui impostos e taxas)</h5-2-5></div>
                 <div class="ofertex5"><a href='../php/ficha_do_hotel.php?cnpj=90123456789012'><h3>Saiba mais</h3></a></div>

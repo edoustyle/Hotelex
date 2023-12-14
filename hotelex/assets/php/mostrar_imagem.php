@@ -8,6 +8,7 @@
     $query = "SELECT caminho FROM imagens_hotel WHERE cnpj_hotel = '$cnpjHotel'";
     $resultado = mysqli_query($conexao, $query);
 
+    print_r('teste');
     // Verifique se a consulta foi bem-sucedida
     if ($resultado) {
         // Obtém os dados binários da imagem
@@ -15,7 +16,7 @@
 
         // Define o cabeçalho da resposta como uma imagem
         header("Content-type: image/*");
-
+        print_r("teste entrei no if imagem");
         // Exibe os dados da imagem
         echo base64_decode($dadosImagem);
         

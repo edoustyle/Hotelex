@@ -118,7 +118,7 @@ section{
     top:70vh;
     border: 3px solid #000000;
 }
-#qtdquarto{
+#qtdquarto, #qtdReservas, #tipoAcomodacao, #tipoCama, #qtdCamas{
     color: #000;
     padding: 0.2em;
     border: 2px solid #000000;
@@ -362,7 +362,7 @@ h4-1{
     display: none;
 }
 /*botao login*/
-button{
+.submitex{
 background-color: #39371F;
 border-color: #000000;
 color: #FFFFFF;
@@ -380,7 +380,7 @@ margin: 20;
 height: 50px;
 }
 /*fundo do botex*/
-button:hover{
+.submitex:hover{
 background-color: #000000;
 color: #fff;
 }
@@ -436,7 +436,7 @@ color: #fffdfd;
     overflow: hidden;
     position: absolute;
     top:45vh;
-    right: 142vh;
+    right: 144.5vh;
   }
   .custom-size{
     width: 70vh; 

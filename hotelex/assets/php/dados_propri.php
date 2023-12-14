@@ -101,12 +101,12 @@
         //     $dale2 = mysqli_query($conexao, "UPDATE comodidades_hotel SET Academia = 0 WHERE cnpj_hotel = '$cnpj'");
         // }
 
-        $nomeImagem = $_FILES['imagem']['name'];
-        echo "Caminho da imagem: $nomeImagem";
-        $imagem=$_FILES['imagem'];
+        // $nomeImagem = $_FILES['imagem']['name'];
+        // echo "Caminho da imagem: $nomeImagem";
+        // $imagem=$_FILES['imagem'];
 
-        $imagemConteudo = file_get_contents($_FILES['imagem']['tmp_name']);
-        $imagemBase64 = base64_encode($imagemConteudo);
+        // $imagemConteudo = file_get_contents($_FILES['imagem']['tmp_name']);
+        // $imagemBase64 = base64_encode($imagemConteudo);
         // if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //     // Se o formulário foi enviado
         //     echo"<br>";
@@ -129,6 +129,6 @@
         // }
 
         //$img = mysqli_query($conexao, "INSERT INTO imagens_hotel(cnpj_hotel,nome_imagem,caminho)VALUES('$cnpj','$nomeImagem','$imagemBase64')");
-        $img2 = mysqli_query($conexao, "UPDATE imagens_hotel SET caminho = '$imagemBase64',nome_imagem ='$nomeImagem' WHERE cnpj_hotel = '12345678901234'");
+       // esse daqui $img2 = mysqli_query($conexao, "UPDATE imagens_hotel SET imagex_data = '$imagemBase64',nome_imagem ='$nomeImagem' WHERE cnpj_hotel = '$cnpj'");
     }
 ?>

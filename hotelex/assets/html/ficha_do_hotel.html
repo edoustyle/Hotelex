@@ -113,47 +113,76 @@
                     </div>
                 </div>
                 <div class="card5">
+                    <div class="preco_reserva" style="margin-top:23vh;"></div>
+                    <p id="precoReserva" style="font-size:4vh; color:#fff;">Preço: R$2.00</p>
                     <div class="selecta">
                         <label for="qtdquarto"><strong>NUMERO<br> DE CAMAS</strong></label>
-                        <select id="qtdquarto" required>
-                          <option selected disabled value="">Selecione</option>
-                          <option>4</option>
-                          <option>3</option>
-                          <option>2</option>
-                          <option>1</option>
+                        <select id="qtdCamas" name="qtdcamas" onchange="atualizarPreco()" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
                         </select>
                     </div>
                     <div class="selecta2">
                         <label for="qtdquarto"><strong>TIPO<br> DE CAMA</strong></label>
-                        <select id="qtdquarto" required>
-                          <option selected disabled value="">Selecione</option>
-                          <option>Casal</option>
-                          <option>Solteiro</option>
-                          <option>Beliche</option>
+                        <select id="tipoCama" name="tipo_cama" onchange="atualizarPreco()" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option value="Casal">Casal</option>
+                        <option value="Solteiro">Solteiro</option>
+                        <option value="Beliche">Beliche</option>
                         </select>
                     </div>
                     <div class="selecta3">
                         <label for="qtdquarto"><strong>TIPO <br> DE ACOMODAÇÃO</strong></label>
-                        <select id="qtdquarto" required>
-                          <option selected disabled value="">Selecione</option>
-                          <option>Quarto</option>
-                          <option>Suíte</option>
+                        <select id="tipoAcomodacao" name="tipo_acomo" onchange="atualizarPreco()" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option value="Quarto">Quarto</option>
+                        <option value="Suíte">Suíte</option>
                         </select>
                     </div>
                     <div class="selecta4">
                         <label for="qtdquarto"><strong>QUANTIDADE<br> DE RESERVAS</strong></label>
-                        <select id="qtdquarto" required>
-                          <option selected disabled value="">Selecione</option>
-                          <option>7</option>
-                          <option>6</option>
-                          <option>5</option>
-                          <option>4</option>
-                          <option>3</option>
-                          <option>2</option>
-                          <option>1</option>
+                        <select id="qtdReservas" name="qtd_reservas" onchange="atualizarPreco()" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
                         </select>
                     </div>
                 </div>
+                <script>
+                // Função para calcular o preço da reserva
+                function atualizarPreco() {
+                    // Obtenha os valores selecionados pelo usuário
+                    var qtdCamas = parseInt(document.getElementById('qtdCamas').value);
+                    var tipoAcomodacao = document.getElementById('tipoAcomodacao').value;
+                    var tipoCama = document.getElementById('tipoCama').value;
+                    var qtdReservas = parseInt(document.getElementById('qtdReservas').value);
+                    console.log(qtdCamas, tipoAcomodacao, tipoCama, qtdReservas);
+
+
+                    // Simule o preço base do hotel (substitua isso com a lógica real)
+                    var precoBaseHotel = 100;
+
+                    // Ajustes com base nas escolhas do usuário
+                    var ajusteCamas = qtdCamas * 10;
+                    var ajusteAcomodacao = (tipoAcomodacao === 'Suíte') ? 50 : 0;
+                    var ajusteCama = (tipoCama === 'Casal') ? 20 : ((tipoCama === 'Beliche') ? 30 : 0);
+                    var ajusteReservas = (qtdReservas > 1) ? (qtdReservas - 1) * 15 : 0;
+
+                    // Calcular o preço total
+                    var precoTotal = precoBaseHotel + ajusteCamas + ajusteAcomodacao + ajusteCama + ajusteReservas;
+                    console.log(precoTotal);
+                    // Atualizar o elemento HTML com o preço calculado
+                    document.getElementById('precoReserva').innerHTML = 'Preço: R$' + precoTotal.toFixed(2);
+                }
+                </script>
                 <div class='justify-center'>
                     <a href="./pagina_inicial.html">
                         <button>Reservar Agora</button>
